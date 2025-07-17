@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>FrontendDialed – AI Funnels That Book Calls on Autopilot</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-start: #0B0F1C;
+      --bg-end:  #131B35;
+      --accent:  #3A86FF;
+      --text:    #FFFFFF;
+      --muted:   #C0C7D1;
+      --card-bg: rgba(255,255,255,0.04);
+    }
+
+    * { box-sizing:border-box; margin:0; padding:0; }
+    body {
+      font-family:'Inter',sans-serif;
+      color:var(--text);
+      background:linear-gradient(180deg,var(--bg-start),var(--bg-end));
+      overflow-x:hidden;
+    }
+    a { text-decoration:none; color:inherit; }
+
+    .btn{
+      display:inline-block; padding:12px 24px; border-radius:8px;
+      font-weight:600; transition:.2s; min-width:180px; text-align:center;
+    }
+    .btn--primary{ background:var(--accent); color:#fff; }
+    .btn--primary:hover{ background:#2d6be0; }
+    .btn--ghost{ border:1px solid var(--muted); color:var(--muted); }
+    .btn--ghost:hover{ color:#fff; border-color:#fff; }
+
+    .nav{
+      width:100%; max-width:1200px; margin:0 auto;
+      padding:32px 24px; display:flex; align-items:center; justify-content:space-between;
+      position:sticky; top:0; z-index:100;
+      background:linear-gradient(180deg,var(--bg-start) 60%,transparent);
+    }
+    .nav__links a{ margin:0 12px; font-size:15px; color:var(--muted); transition:.2s; }
+    .nav__links a:hover{ color:var(--text); }
+
+    .hero{ max-width:960px; margin:100px auto 80px; text-align:center; padding:0 20px; }
+    .hero h1{ font-size:56px; line-height:1.1; margin-bottom:24px; }
+    .hero p{ font-size:20px; color:var(--muted); margin-bottom:40px; }
+    .hero__buttons{ display:flex; gap:18px; justify-content:center; flex-wrap:wrap; }
+
+    .features, .pricing-grid{
+      max-width:1000px; margin:100px auto;
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:32px; padding:0 20px;
+    }
+
+    .card{
+      background:var(--card-bg); backdrop-filter:blur(10px);
+      padding:32px; border-radius:12px; text-align:center;
+    }
+    .card img{ width:48px; height:48px; }
+    .card h3{ margin:18px 0 12px; font-size:20px; }
+    .card p{ font-size:16px; color:var(--muted); line-height:1.5; }
+
+    .testimonials{ max-width:960px; margin:100px auto; padding:0 20px; text-align:center; }
+    .testimonials h2{ font-size:32px; margin-bottom:40px; }
+    .testimonial{
+      background:var(--card-bg); backdrop-filter:blur(10px);
+      border-radius:12px; padding:24px; margin-bottom:24px;
+    }
+    .testimonial p{ font-size:16px; line-height:1.6; color:var(--muted); margin-bottom:12px; }
+    .testimonial strong{ color:var(--text); }
+
+    .pricing-section{ padding:100px 20px; text-align:center; }
+    .pricing-section h2{ font-size:36px; margin-bottom:16px; }
+    .pricing-section p{ font-size:18px; color:var(--muted); margin-bottom:48px; }
+    .price-card{
+      background:var(--card-bg); backdrop-filter:blur(10px);
+      padding:40px; border-radius:16px; text-align:center;
+    }
+    .price-card h3{ font-size:28px; margin-bottom:8px; }
+    .price-card .price{ font-size:36px; margin:16px 0; font-weight:700; }
+    .price-card ul{ list-style:none; padding:0; margin:20px 0 30px;
+                    color:var(--muted); line-height:1.8; font-size:16px; }
+
+    .cta, .chatbot-section {
+      margin:150px 0 120px; text-align:center; padding:0 20px;
+    }
+    .cta h2, .chatbot-section h2 { font-size:32px; margin-bottom:24px; }
+
+    footer{ padding:40px 20px; text-align:center; color:var(--muted); font-size:14px; }
+
+    iframe.chatbot-frame {
+      width:100%;
+      height:700px;
+      border:none;
+      border-radius:12px;
+      background:white;
+    }
+
+    @media(max-width:600px){
+      .hero h1{ font-size:36px; }
+      .hero p{ font-size:16px; }
+      .hero__buttons a{ margin-bottom:12px; }
+      .card{ padding:24px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div style="font-weight:700;font-size:18px">FrontendDialed</div>
+    <div class="nav__links">
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#chatbot">Try the Bot</a>
+      <a href="#contact">Contact</a>
+      <a href="#cta">Get Started</a>
+    </div>
+    <a href="https://calendly.com/seanmnr20/30min" class="btn btn--primary">Book Call</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Land & Close Clients on Autopilot — In 7 Days or Less</h1>
+    <p>We build your entire client‑acquisition system — landing page, lead capture, AI closer, scheduling, and payment — 100% done‑for‑you.</p>
+    <div class="hero__buttons">
+      <a href="https://calendly.com/seanmnr20/30min" class="btn btn--primary" target="_blank" rel="noopener">Book Strategy Call</a>
+      <a href="#features" class="btn btn--ghost">Explore Features</a>
+    </div>
+  </header>
+
+  <section id="features" class="features">
+    <div class="card">
+      <img src="https://img.icons8.com/fluency-systems-regular/48/3A86FF/web-design.png" alt="">
+      <h3>High‑Converting Landing Pages</h3>
+      <p>We design and write a custom landing page that speaks directly to your market — built to convert with clean layout, persuasive copy, and a single, clear CTA.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/fluency-systems-regular/48/3A86FF/artificial-intelligence.png" alt="">
+      <h3>AI Chatbot That Qualifies Leads</h3>
+      <p>An intelligent chatbot handles objections, asks qualifying questions, and guides prospects to schedule a call or pay — while you sleep.</p>
+    </div>
+    <div class="card">
+      <img src="https://img.icons8.com/fluency-systems-regular/48/3A86FF/calendar--v1.png" alt="">
+      <h3>Built‑In Scheduling & Payments</h3>
+      <p>Qualified leads go straight to your Calendly or checkout. We integrate Calendly & Stripe end‑to‑end so you’re closing deals on autopilot.</p>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing-section">
+    <h2>Simple, Transparent Pricing</h2>
+    <p>No retainers. No BS. Just one upfront investment to launch your automated funnel.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>AI Funnel Build</h3>
+        <p class="price">$2,500 One‑Time</p>
+        <ul>
+          <li>✓ Fully custom AI‑powered funnel</li>
+          <li>✓ Landing page, chatbot, Calendly & Stripe</li>
+          <li>✓ Delivery in under 7 days</li>
+          <li>✓ Copywriting & design included</li>
+        </ul>
+        <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn--primary" target="_blank" rel="noopener">Pay Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>What Our Clients Are Saying</h2>
+    <div class="testimonial">
+      <p>“I closed 3 new clients in the first week. This system is a game‑changer.”</p>
+      <strong>— Marcus J., Agency Owner</strong>
+    </div>
+    <div class="testimonial">
+      <p>“A complete, professional funnel live in just 5 days. Zero tech headaches.”</p>
+      <strong>— Alicia T., Consultant</strong>
+    </div>
+    <div class="testimonial">
+      <p>“FrontendDialed did everything for me — I just had to show up to the calls.”</p>
+      <strong>— Darnell M., Coach</strong>
+    </div>
+  </section>
+
+  <section id="chatbot" class="chatbot-section">
+    <h2>Try the AI Closer Bot</h2>
+    <p style="max-width:700px;margin:0 auto 24px;font-size:16px;color:var(--muted);line-height:1.6;">
+      This is the exact same bot that will be embedded directly into <strong>your own landing page</strong> — trained to qualify leads, book calls, and close clients in <strong>your personal market</strong>. It's like having a 24/7 sales rep built into your funnel.
+    </p>
+    <iframe
+      class="chatbot-frame"
+      src="https://www.chatbase.co/chatbot-iframe/7F__-FE_5uXmAEJgL82dN"
+      title="AI Chatbot"
+    ></iframe>
+  </section>
+
+  <section id="cta" class="cta">
+    <h2>Only 5 Funnel Slots Left This Month</h2>
+    <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00"
+       class="btn btn--primary"
+       style="font-size:18px;padding:16px 32px"
+       target="_blank" rel="noopener">
+       Claim Your Spot →
+    </a>
+  </section>
+
+  <section id="contact" class="cta">
+    <h2>Questions? Let’s Talk</h2>
+    <p style="color:var(--muted);margin:16px auto 32px;font-size:16px;">
+      Email me directly at
+      <a href="mailto:seanmnr20@gmail.com" style="color:var(--accent);text-decoration:underline;">
+        seanmnr20@gmail.com
+      </a><br/>
+      — Sean Raisor, Founder of FrontendDialed
+    </p>
+    <a href="mailto:seanmnr20@gmail.com" class="btn btn--ghost">Email Me</a>
+  </section>
+
+  <footer>
+    © 2025 FrontendDialed. All rights reserved.
+  </footer>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id=a.getAttribute('href').slice(1);
+        const el=document.getElementById(id);
+        if(el){
+          e.preventDefault();
+          el.scrollIntoView({behavior:'smooth'});
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
