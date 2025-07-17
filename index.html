@@ -7,51 +7,124 @@
   <meta name="keywords" content="AI sales automation, client acquisition, lead generation, conversion optimization"/>
   <meta property="og:title" content="FrontendDialed - Enterprise AI Client Acquisition"/>
   <meta property="og:description" content="Deploy sophisticated AI-powered funnels that transform visitors into clients. Enterprise-grade automation delivered in 7 days."/>
+  <meta property="og:image" content="https://frontenddialed.com/og-image.jpg"/>
+  <meta property="og:url" content="https://frontenddialed.com"/>
+  <meta name="twitter:card" content="summary_large_image"/>
   
   <title>FrontendDialed - Enterprise AI Client Acquisition Systems</title>
   
+  <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Advanced Typography Stack -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <style>
+    /* Advanced CSS Architecture with Custom Properties */
     :root {
+      /* Sophisticated Color System */
       --primary-900: #0A0E1A;
       --primary-800: #0F1629;
       --primary-700: #141E3C;
       --primary-600: #1A2754;
       --primary-500: #2A3F7E;
+      --primary-400: #3A57A8;
+      --primary-300: #4A6FD2;
+      --primary-200: #7094E5;
+      --primary-100: #9BB5F0;
+      --primary-50: #E6EFFF;
+      
       --accent-500: #3A86FF;
       --accent-400: #5B9AFF;
-      --neutral-50: #F5F5F5;
-      --neutral-100: #E5E5E5;
-      --neutral-200: #CCCCCC;
-      --neutral-300: #A3A3A3;
+      --accent-300: #7CAEFF;
+      --accent-200: #9DC2FF;
+      --accent-100: #BED6FF;
+      
+      --neutral-900: #0D0D0D;
+      --neutral-800: #1A1A1A;
+      --neutral-700: #262626;
+      --neutral-600: #404040;
+      --neutral-500: #595959;
       --neutral-400: #737373;
-      --neutral-500: #525252;
+      --neutral-300: #8C8C8C;
+      --neutral-200: #B3B3B3;
+      --neutral-100: #D9D9D9;
+      --neutral-50: #F5F5F5;
+      
       --success-500: #10B981;
+      --warning-500: #F59E0B;
       --error-500: #EF4444;
+      
+      /* Advanced Spacing System */
+      --space-xs: 0.25rem;
+      --space-sm: 0.5rem;
+      --space-md: 1rem;
+      --space-lg: 1.5rem;
+      --space-xl: 2rem;
+      --space-2xl: 3rem;
+      --space-3xl: 4rem;
+      --space-4xl: 6rem;
+      
+      /* Premium Typography Scale */
+      --font-size-xs: clamp(0.75rem, 0.7vw + 0.5rem, 0.875rem);
+      --font-size-sm: clamp(0.875rem, 0.8vw + 0.6rem, 1rem);
+      --font-size-base: clamp(1rem, 1vw + 0.7rem, 1.125rem);
+      --font-size-lg: clamp(1.125rem, 1.2vw + 0.8rem, 1.25rem);
+      --font-size-xl: clamp(1.25rem, 1.5vw + 0.9rem, 1.5rem);
+      --font-size-2xl: clamp(1.5rem, 2vw + 1rem, 2rem);
+      --font-size-3xl: clamp(2rem, 3vw + 1.2rem, 3rem);
+      --font-size-4xl: clamp(2.5rem, 4vw + 1.5rem, 4rem);
+      --font-size-5xl: clamp(3rem, 5vw + 2rem, 5rem);
+      
+      /* Animation Timing Functions */
+      --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+      --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+      --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
+      
+      /* Shadows */
+      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+      --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+      --shadow-glow: 0 0 50px rgb(58 134 255 / 0.3);
+      
+      /* Gradients */
+      --gradient-primary: linear-gradient(135deg, var(--primary-900) 0%, var(--primary-800) 50%, var(--primary-700) 100%);
+      --gradient-accent: linear-gradient(135deg, var(--accent-400) 0%, var(--accent-500) 100%);
+      --gradient-mesh: radial-gradient(at 40% 20%, var(--primary-600) 0%, transparent 50%),
+                       radial-gradient(at 80% 0%, var(--primary-700) 0%, transparent 50%),
+                       radial-gradient(at 0% 50%, var(--primary-800) 0%, transparent 50%);
     }
     
-    * {
+    /* Reset with Performance Optimizations */
+    *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
     
+    /* Base Styles */
     html {
+      font-size: 16px;
       scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
     }
     
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      font-weight: 400;
+      line-height: 1.6;
       color: var(--neutral-50);
       background: var(--primary-900);
-      line-height: 1.6;
       overflow-x: hidden;
+      position: relative;
     }
     
-    /* Background */
+    /* Advanced Background Effects */
     body::before {
       content: '';
       position: fixed;
@@ -59,34 +132,87 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: radial-gradient(circle at 20% 50%, rgba(58, 134, 255, 0.1) 0%, transparent 50%),
-                  radial-gradient(circle at 80% 80%, rgba(42, 63, 126, 0.1) 0%, transparent 50%),
-                  linear-gradient(180deg, #0A0E1A 0%, #141E3C 100%);
+      background: var(--gradient-mesh);
+      opacity: 0.4;
+      z-index: -2;
+    }
+    
+    /* Animated Gradient Orbs */
+    .orb {
+      position: fixed;
+      border-radius: 50%;
+      filter: blur(100px);
+      opacity: 0.3;
+      animation: float 20s infinite ease-in-out;
       z-index: -1;
     }
     
-    /* Navigation */
+    .orb-1 {
+      width: 600px;
+      height: 600px;
+      background: var(--accent-500);
+      top: -200px;
+      left: -200px;
+      animation-delay: 0s;
+    }
+    
+    .orb-2 {
+      width: 800px;
+      height: 800px;
+      background: var(--primary-500);
+      bottom: -300px;
+      right: -300px;
+      animation-delay: 7s;
+    }
+    
+    .orb-3 {
+      width: 500px;
+      height: 500px;
+      background: var(--accent-400);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation-delay: 14s;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translate(0, 0) scale(1); }
+      25% { transform: translate(50px, -50px) scale(1.1); }
+      50% { transform: translate(-30px, 30px) scale(0.9); }
+      75% { transform: translate(30px, 50px) scale(1.05); }
+    }
+    
+    /* Typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'SF Pro Display', 'Inter', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+    }
+    
+    /* Advanced Navigation */
     .nav {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       z-index: 1000;
-      background: rgba(10, 14, 26, 0.8);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease;
+      backdrop-filter: blur(20px) saturate(180%);
+      background: rgba(10, 14, 26, 0.7);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.3s var(--ease-out-quart);
     }
     
     .nav.scrolled {
-      background: rgba(10, 14, 26, 0.95);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(30px) saturate(200%);
+      background: rgba(10, 14, 26, 0.85);
+      box-shadow: var(--shadow-lg);
     }
     
     .nav__container {
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 0 auto;
-      padding: 1.25rem 2rem;
+      padding: 1.5rem 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -98,95 +224,125 @@
       gap: 0.75rem;
       font-size: 1.25rem;
       font-weight: 700;
-      color: white;
-      text-decoration: none;
+      color: var(--neutral-50);
+      transition: transform 0.3s var(--ease-out-quart);
+    }
+    
+    .nav__logo:hover {
+      transform: translateY(-2px);
     }
     
     .nav__logo-icon {
       width: 40px;
       height: 40px;
-      background: linear-gradient(135deg, var(--accent-400), var(--accent-500));
-      border-radius: 10px;
+      background: var(--gradient-accent);
+      border-radius: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 800;
-      color: white;
+      font-size: 1.25rem;
+      box-shadow: var(--shadow-glow);
     }
     
     .nav__links {
       display: flex;
-      gap: 2rem;
-      list-style: none;
       align-items: center;
+      gap: 2.5rem;
+      list-style: none;
     }
     
     .nav__link {
       color: var(--neutral-200);
-      text-decoration: none;
+      font-size: 0.95rem;
       font-weight: 500;
-      transition: color 0.3s ease;
+      text-decoration: none;
       position: relative;
-    }
-    
-    .nav__link:hover {
-      color: white;
+      transition: color 0.3s ease;
+      padding: 0.5rem 0;
     }
     
     .nav__link::after {
       content: '';
       position: absolute;
-      bottom: -5px;
+      bottom: 0;
       left: 0;
       width: 0;
       height: 2px;
-      background: var(--accent-500);
-      transition: width 0.3s ease;
+      background: var(--gradient-accent);
+      transition: width 0.3s var(--ease-out-quart);
+    }
+    
+    .nav__link:hover {
+      color: var(--neutral-50);
     }
     
     .nav__link:hover::after {
       width: 100%;
     }
     
-    /* Buttons */
+    /* Premium Button Styles */
     .btn {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 0.5rem;
-      padding: 0.75rem 1.5rem;
-      border-radius: 8px;
+      padding: 0.875rem 2rem;
+      font-size: 0.95rem;
       font-weight: 600;
+      border-radius: 12px;
       text-decoration: none;
-      transition: all 0.3s ease;
+      transition: all 0.3s var(--ease-out-quart);
       cursor: pointer;
-      border: none;
-      font-size: 1rem;
+      position: relative;
+      overflow: hidden;
+      white-space: nowrap;
     }
     
     .btn--primary {
-      background: linear-gradient(135deg, var(--accent-400), var(--accent-500));
+      background: var(--gradient-accent);
       color: white;
-      box-shadow: 0 4px 15px rgba(58, 134, 255, 0.3);
+      box-shadow: 0 4px 20px rgba(58, 134, 255, 0.3);
     }
     
     .btn--primary:hover {
       transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(58, 134, 255, 0.4);
+      box-shadow: 0 6px 30px rgba(58, 134, 255, 0.4);
+    }
+    
+    .btn--primary::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: width 0.6s, height 0.6s;
+    }
+    
+    .btn--primary:active::before {
+      width: 300px;
+      height: 300px;
     }
     
     .btn--secondary {
-      background: rgba(255, 255, 255, 0.1);
-      color: white;
-      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--neutral-50);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
     }
     
     .btn--secondary:hover {
-      background: rgba(255, 255, 255, 0.2);
-      border-color: rgba(255, 255, 255, 0.3);
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+      transform: translateY(-2px);
     }
     
     .btn--large {
-      padding: 1rem 2rem;
+      padding: 1.25rem 3rem;
       font-size: 1.125rem;
     }
     
@@ -198,8 +354,9 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 6rem 2rem 4rem;
+      padding: var(--space-4xl) var(--space-xl);
       position: relative;
+      overflow: hidden;
     }
     
     .hero__badge {
@@ -210,60 +367,61 @@
       background: rgba(58, 134, 255, 0.1);
       border: 1px solid rgba(58, 134, 255, 0.3);
       border-radius: 50px;
-      font-size: 0.875rem;
-      color: var(--accent-400);
-      margin-bottom: 2rem;
+      font-size: var(--font-size-sm);
+      color: var(--accent-300);
+      margin-bottom: var(--space-xl);
+      animation: fadeInUp 0.8s var(--ease-out-quart);
     }
     
     .hero__badge-icon {
-      width: 8px;
-      height: 8px;
+      width: 16px;
+      height: 16px;
       background: var(--accent-500);
       border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       animation: pulse 2s infinite;
     }
     
     @keyframes pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.5; transform: scale(1.5); }
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.2); opacity: 0.7; }
     }
     
     .hero__title {
-      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-size: var(--font-size-5xl);
       font-weight: 800;
-      margin-bottom: 1.5rem;
-      line-height: 1.1;
-    }
-    
-    .text-gradient {
-      background: linear-gradient(135deg, var(--accent-400), var(--accent-500));
+      margin-bottom: var(--space-xl);
+      background: linear-gradient(135deg, var(--neutral-50) 0%, var(--neutral-200) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      background-clip: text;
+      animation: fadeInUp 0.8s var(--ease-out-quart) 0.1s both;
     }
     
     .hero__subtitle {
-      font-size: 1.25rem;
+      font-size: var(--font-size-xl);
       color: var(--neutral-300);
-      max-width: 700px;
-      margin: 0 auto 2.5rem;
+      max-width: 800px;
+      margin: 0 auto var(--space-2xl);
       line-height: 1.6;
+      animation: fadeInUp 0.8s var(--ease-out-quart) 0.2s both;
     }
     
     .hero__cta {
       display: flex;
-      gap: 1rem;
+      gap: var(--space-lg);
       justify-content: center;
       flex-wrap: wrap;
-      margin-bottom: 4rem;
+      animation: fadeInUp 0.8s var(--ease-out-quart) 0.3s both;
     }
     
-    /* Stats */
+    /* Stats Strip */
     .stats {
       display: flex;
-      gap: 4rem;
-      justify-content: center;
-      flex-wrap: wrap;
+      gap: var(--space-3xl);
+      margin-top: var(--space-3xl);
+      animation: fadeInUp 0.8s var(--ease-out-quart) 0.4s both;
     }
     
     .stat {
@@ -271,13 +429,15 @@
     }
     
     .stat__number {
-      font-size: 2.5rem;
+      font-size: var(--font-size-3xl);
       font-weight: 800;
-      color: var(--accent-400);
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     
     .stat__label {
-      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
       color: var(--neutral-400);
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -285,136 +445,174 @@
     
     /* Features Section */
     .features {
-      padding: 5rem 2rem;
-      background: rgba(255, 255, 255, 0.02);
+      padding: var(--space-4xl) var(--space-xl);
+      position: relative;
     }
     
     .features__header {
       text-align: center;
-      max-width: 700px;
-      margin: 0 auto 3rem;
+      max-width: 800px;
+      margin: 0 auto var(--space-3xl);
     }
     
     .features__title {
-      font-size: clamp(2rem, 4vw, 3rem);
-      margin-bottom: 1rem;
-      font-weight: 800;
+      font-size: var(--font-size-4xl);
+      margin-bottom: var(--space-lg);
     }
     
     .features__subtitle {
-      font-size: 1.125rem;
+      font-size: var(--font-size-lg);
       color: var(--neutral-300);
     }
     
     .features__grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: var(--space-xl);
       max-width: 1200px;
       margin: 0 auto;
     }
     
     .feature-card {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      padding: 2rem;
-      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 24px;
+      padding: var(--space-2xl);
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s var(--ease-out-quart);
+    }
+    
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--gradient-accent);
+      transform: translateX(-100%);
+      transition: transform 0.4s var(--ease-out-quart);
     }
     
     .feature-card:hover {
-      transform: translateY(-5px);
-      background: rgba(255, 255, 255, 0.08);
+      transform: translateY(-8px);
+      background: rgba(255, 255, 255, 0.04);
+      border-color: rgba(255, 255, 255, 0.1);
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
     
+    .feature-card:hover::before {
+      transform: translateX(0);
+    }
+    
     .feature-card__icon {
-      font-size: 3rem;
-      margin-bottom: 1rem;
+      width: 64px;
+      height: 64px;
+      background: rgba(58, 134, 255, 0.1);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: var(--space-xl);
+      font-size: 2rem;
     }
     
     .feature-card__title {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      font-weight: 700;
+      font-size: var(--font-size-2xl);
+      margin-bottom: var(--space-md);
     }
     
     .feature-card__description {
+      font-size: var(--font-size-base);
       color: var(--neutral-300);
-      line-height: 1.6;
+      line-height: 1.7;
     }
     
     /* Process Section */
     .process {
-      padding: 5rem 2rem;
+      padding: var(--space-4xl) var(--space-xl);
+      background: rgba(255, 255, 255, 0.01);
+      backdrop-filter: blur(10px);
+    }
+    
+    .process__header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto var(--space-3xl);
     }
     
     .process__timeline {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
+      position: relative;
+    }
+    
+    .process__timeline::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, transparent, var(--accent-500), transparent);
+      transform: translateX(-50%);
     }
     
     .process__step {
       display: flex;
       align-items: center;
-      margin-bottom: 3rem;
-      gap: 2rem;
+      margin-bottom: var(--space-3xl);
+      position: relative;
     }
     
     .process__step:nth-child(even) {
       flex-direction: row-reverse;
     }
     
+    .process__step-content {
+      flex: 1;
+      padding: var(--space-xl);
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
     .process__step-number {
       width: 60px;
       height: 60px;
-      background: linear-gradient(135deg, var(--accent-400), var(--accent-500));
+      background: var(--gradient-accent);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
+      font-size: var(--font-size-xl);
       font-weight: 700;
-      flex-shrink: 0;
-    }
-    
-    .process__step-content {
-      flex: 1;
-      background: rgba(255, 255, 255, 0.05);
-      padding: 1.5rem;
-      border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-    
-    .process__step-content h3 {
-      margin-bottom: 0.5rem;
-      font-size: 1.25rem;
-    }
-    
-    .process__step-content p {
-      color: var(--neutral-300);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 10;
     }
     
     /* Pricing Section */
     .pricing {
-      padding: 5rem 2rem;
-      background: rgba(255, 255, 255, 0.02);
+      padding: var(--space-4xl) var(--space-xl);
+      text-align: center;
     }
     
     .pricing__header {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 3rem;
+      max-width: 800px;
+      margin: 0 auto var(--space-3xl);
     }
     
     .pricing__card {
       max-width: 500px;
       margin: 0 auto;
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.02);
       border: 2px solid var(--accent-500);
-      border-radius: 20px;
-      padding: 3rem;
-      text-align: center;
+      border-radius: 24px;
+      padding: var(--space-3xl);
       position: relative;
       overflow: hidden;
     }
@@ -422,31 +620,40 @@
     .pricing__card::before {
       content: '';
       position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 4px;
-      background: linear-gradient(90deg, var(--accent-400), var(--accent-500));
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, var(--accent-500) 0%, transparent 70%);
+      opacity: 0.05;
+      animation: rotate 20s linear infinite;
+    }
+    
+    @keyframes rotate {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
     
     .pricing__price {
-      font-size: 3rem;
+      font-size: var(--font-size-4xl);
       font-weight: 800;
-      color: var(--accent-400);
-      margin: 1.5rem 0;
+      margin: var(--space-xl) 0;
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     
     .pricing__features {
       list-style: none;
-      margin: 2rem 0;
+      margin: var(--space-2xl) 0;
       text-align: left;
     }
     
     .pricing__feature {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      padding: 0.75rem 0;
+      gap: var(--space-md);
+      padding: var(--space-sm) 0;
       color: var(--neutral-200);
     }
     
@@ -457,73 +664,83 @@
     
     /* Testimonials */
     .testimonials {
-      padding: 5rem 2rem;
+      padding: var(--space-4xl) var(--space-xl);
+      overflow: hidden;
     }
     
     .testimonials__header {
       text-align: center;
-      max-width: 700px;
-      margin: 0 auto 3rem;
+      max-width: 800px;
+      margin: 0 auto var(--space-3xl);
     }
     
     .testimonials__grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: var(--space-xl);
       max-width: 1200px;
       margin: 0 auto;
     }
     
     .testimonial {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 16px;
-      padding: 2rem;
-    }
-    
-    .testimonial__rating {
-      color: #FFC107;
-      margin-bottom: 1rem;
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 24px;
+      padding: var(--space-2xl);
+      position: relative;
     }
     
     .testimonial__quote {
-      font-size: 1.125rem;
-      line-height: 1.7;
-      margin-bottom: 1.5rem;
+      font-size: var(--font-size-lg);
+      line-height: 1.8;
       color: var(--neutral-100);
+      margin-bottom: var(--space-xl);
     }
     
     .testimonial__author {
       display: flex;
       align-items: center;
-      gap: 1rem;
+      gap: var(--space-md);
     }
     
     .testimonial__avatar {
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent-400), var(--accent-500));
+      background: var(--gradient-accent);
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: 700;
-      color: white;
+      font-size: 1.25rem;
+    }
+    
+    .testimonial__info {
+      flex: 1;
     }
     
     .testimonial__name {
       font-weight: 600;
+      color: var(--neutral-50);
     }
     
     .testimonial__role {
-      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
       color: var(--neutral-400);
     }
     
-    /* Chatbot Demo */
+    .testimonial__rating {
+      display: flex;
+      gap: 0.25rem;
+      margin-bottom: var(--space-md);
+      color: var(--warning-500);
+    }
+    
+    /* Chatbot Demo Section */
     .chatbot-demo {
-      padding: 5rem 2rem;
-      background: rgba(255, 255, 255, 0.02);
+      padding: var(--space-4xl) var(--space-xl);
+      background: rgba(255, 255, 255, 0.01);
     }
     
     .chatbot-demo__container {
@@ -531,62 +748,68 @@
       margin: 0 auto;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 4rem;
+      gap: var(--space-3xl);
       align-items: center;
     }
     
+    .chatbot-demo__content {
+      padding-right: var(--space-2xl);
+    }
+    
     .chatbot-demo__title {
-      font-size: clamp(2rem, 4vw, 2.5rem);
-      margin-bottom: 1.5rem;
-      font-weight: 800;
+      font-size: var(--font-size-3xl);
+      margin-bottom: var(--space-xl);
     }
     
     .chatbot-demo__description {
-      font-size: 1.125rem;
+      font-size: var(--font-size-lg);
       color: var(--neutral-300);
-      margin-bottom: 2rem;
+      margin-bottom: var(--space-2xl);
       line-height: 1.7;
     }
     
     .chatbot-demo__features {
       list-style: none;
-      margin-bottom: 2rem;
+      margin-bottom: var(--space-2xl);
     }
     
     .chatbot-demo__feature {
       display: flex;
       align-items: center;
-      gap: 0.75rem;
-      padding: 0.5rem 0;
+      gap: var(--space-md);
+      padding: var(--space-sm) 0;
       color: var(--neutral-200);
     }
     
     .chatbot-demo__frame-wrapper {
-      border-radius: 20px;
+      position: relative;
+      border-radius: 24px;
       overflow: hidden;
-      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
     }
     
     .chatbot-demo__frame {
       width: 100%;
-      height: 600px;
+      height: 700px;
       border: none;
       background: white;
     }
     
     /* CTA Section */
     .cta {
-      padding: 5rem 2rem;
+      padding: var(--space-4xl) var(--space-xl);
       text-align: center;
     }
     
     .cta__container {
-      max-width: 700px;
+      max-width: 800px;
       margin: 0 auto;
-      padding: 3rem;
-      background: rgba(58, 134, 255, 0.1);
-      border: 2px solid rgba(58, 134, 255, 0.3);
-      border-radius: 20px;
+      padding: var(--space-3xl);
+      background: rgba(58, 134, 255, 0.05);
+      border: 2px solid rgba(58, 134, 255, 0.2);
+      border-radius: 32px;
+      position: relative;
+      overflow: hidden;
     }
     
     .cta__badge {
@@ -597,37 +820,39 @@
       background: rgba(239, 68, 68, 0.1);
       border: 1px solid rgba(239, 68, 68, 0.3);
       border-radius: 50px;
-      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
       color: var(--error-500);
-      margin-bottom: 1.5rem;
+      margin-bottom: var(--space-xl);
     }
     
     .cta__title {
-      font-size: clamp(1.75rem, 4vw, 2.5rem);
-      margin-bottom: 1rem;
-      font-weight: 800;
+      font-size: var(--font-size-3xl);
+      margin-bottom: var(--space-lg);
     }
     
     .cta__description {
-      font-size: 1.125rem;
+      font-size: var(--font-size-lg);
       color: var(--neutral-300);
-      margin-bottom: 2rem;
-      line-height: 1.6;
+      margin-bottom: var(--space-2xl);
     }
     
     /* Footer */
     .footer {
-      padding: 3rem 2rem 2rem;
-      background: rgba(0, 0, 0, 0.5);
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: var(--space-3xl) var(--space-xl);
+      background: rgba(0, 0, 0, 0.3);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
     }
     
     .footer__container {
-      max-width: 1200px;
+      max-width: 1400px;
       margin: 0 auto;
       display: grid;
       grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 3rem;
+      gap: var(--space-3xl);
+    }
+    
+    .footer__brand {
+      padding-right: var(--space-2xl);
     }
     
     .footer__logo {
@@ -636,25 +861,25 @@
       gap: 0.75rem;
       font-size: 1.25rem;
       font-weight: 700;
-      color: white;
-      margin-bottom: 1rem;
+      color: var(--neutral-50);
+      margin-bottom: var(--space-lg);
     }
     
     .footer__description {
       color: var(--neutral-400);
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
+      line-height: 1.7;
+      margin-bottom: var(--space-xl);
     }
     
     .footer__social {
       display: flex;
-      gap: 1rem;
+      gap: var(--space-md);
     }
     
     .footer__social-link {
       width: 40px;
       height: 40px;
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(255, 255, 255, 0.05);
       border-radius: 50%;
       display: flex;
       align-items: center;
@@ -669,11 +894,15 @@
       transform: translateY(-2px);
     }
     
+    .footer__column {
+      padding: 0 var(--space-md);
+    }
+    
     .footer__title {
-      font-size: 1rem;
+      font-size: var(--font-size-base);
       font-weight: 600;
-      color: white;
-      margin-bottom: 1rem;
+      color: var(--neutral-50);
+      margin-bottom: var(--space-lg);
     }
     
     .footer__links {
@@ -684,23 +913,40 @@
       color: var(--neutral-400);
       text-decoration: none;
       display: block;
-      padding: 0.25rem 0;
+      padding: var(--space-xs) 0;
       transition: color 0.3s ease;
     }
     
     .footer__link:hover {
-      color: white;
+      color: var(--neutral-50);
     }
     
     .footer__bottom {
-      margin-top: 3rem;
-      padding-top: 2rem;
-      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      margin-top: var(--space-3xl);
+      padding-top: var(--space-2xl);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
       display: flex;
       justify-content: space-between;
       align-items: center;
       color: var(--neutral-500);
-      font-size: 0.875rem;
+      font-size: var(--font-size-sm);
+    }
+    
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     
     /* Mobile Menu */
@@ -717,11 +963,46 @@
     .mobile-menu-toggle span {
       width: 24px;
       height: 2px;
-      background: white;
+      background: var(--neutral-50);
       transition: all 0.3s ease;
     }
     
-    /* Responsive */
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--primary-900);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .mobile-menu.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .mobile-menu__links {
+      list-style: none;
+      text-align: center;
+    }
+    
+    .mobile-menu__link {
+      display: block;
+      padding: var(--space-lg);
+      font-size: var(--font-size-xl);
+      color: var(--neutral-50);
+      text-decoration: none;
+    }
+    
+    /* Responsive Design */
     @media (max-width: 1024px) {
       .nav__links {
         display: none;
@@ -731,37 +1012,8 @@
         display: flex;
       }
       
-      .chatbot-demo__container {
-        grid-template-columns: 1fr;
-      }
-      
-      .footer__container {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
-    
-    @media (max-width: 640px) {
       .hero__title {
-        font-size: 2rem;
-      }
-      
-      .hero__subtitle {
-        font-size: 1rem;
-      }
-      
-      .hero__cta {
-        flex-direction: column;
-        width: 100%;
-      }
-      
-      .btn {
-        width: 100%;
-        justify-content: center;
-      }
-      
-      .stats {
-        flex-direction: column;
-        gap: 2rem;
+        font-size: var(--font-size-4xl);
       }
       
       .features__grid,
@@ -769,8 +1021,13 @@
         grid-template-columns: 1fr;
       }
       
-      .process__step {
-        flex-direction: column !important;
+      .chatbot-demo__container {
+        grid-template-columns: 1fr;
+      }
+      
+      .chatbot-demo__content {
+        padding-right: 0;
+        margin-bottom: var(--space-2xl);
       }
       
       .footer__container {
@@ -784,29 +1041,125 @@
       
       .footer__bottom {
         flex-direction: column;
-        gap: 1rem;
+        gap: var(--space-md);
         text-align: center;
       }
     }
     
-    /* Animations */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
+    @media (max-width: 640px) {
+      .hero {
+        padding: var(--space-3xl) var(--space-lg);
       }
-      to {
-        opacity: 1;
-        transform: translateY(0);
+      
+      .hero__title {
+        font-size: var(--font-size-3xl);
+      }
+      
+      .hero__subtitle {
+        font-size: var(--font-size-base);
+      }
+      
+      .hero__cta {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .btn {
+        width: 100%;
+      }
+      
+      .stats {
+        flex-direction: column;
+        gap: var(--space-xl);
+      }
+      
+      .features__grid,
+      .testimonials__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+      }
+      
+      .feature-card {
+        padding: var(--space-xl);
+      }
+      
+      .process__step {
+        flex-direction: column !important;
+      }
+      
+      .process__timeline::before {
+        display: none;
+      }
+      
+      .process__step-number {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-bottom: var(--space-lg);
       }
     }
     
-    .animate-in {
-      animation: fadeInUp 0.8s ease forwards;
+    /* Utility Classes */
+    .text-gradient {
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .shadow-glow {
+      box-shadow: var(--shadow-glow);
+    }
+    
+    .backdrop-blur {
+      backdrop-filter: blur(20px);
+    }
+    
+    /* Loading Animation */
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--primary-900);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease;
+    }
+    
+    .loader.loaded {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    .loader__spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top-color: var(--accent-500);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
     }
   </style>
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader__spinner"></div>
+  </div>
+  
+  <!-- Animated Background Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  
   <!-- Navigation -->
   <nav class="nav" id="navbar">
     <div class="nav__container">
@@ -825,6 +1178,9 @@
       
       <a href="https://calendly.com/seanmnr20/30min" class="btn btn--primary" target="_blank" rel="noopener">
         Book Strategy Call
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        </svg>
       </a>
       
       <button class="mobile-menu-toggle" id="mobileMenuToggle">
@@ -834,6 +1190,18 @@
       </button>
     </div>
   </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__links">
+      <li><a href="#features" class="mobile-menu__link">Features</a></li>
+      <li><a href="#process" class="mobile-menu__link">Process</a></li>
+      <li><a href="#pricing" class="mobile-menu__link">Pricing</a></li>
+      <li><a href="#testimonials" class="mobile-menu__link">Testimonials</a></li>
+      <li><a href="#demo" class="mobile-menu__link">Demo</a></li>
+      <li><a href="https://calendly.com/seanmnr20/30min" class="mobile-menu__link" target="_blank">Book Call</a></li>
+    </ul>
+  </div>
   
   <!-- Hero Section -->
   <section class="hero">
@@ -854,7 +1222,10 @@
     
     <div class="hero__cta">
       <a href="https://calendly.com/seanmnr20/30min" class="btn btn--primary btn--large" target="_blank" rel="noopener">
-        Start Building Your Funnel →
+        Start Building Your Funnel
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        </svg>
       </a>
       <a href="#demo" class="btn btn--secondary btn--large">
         See Live Demo
@@ -945,4 +1316,295 @@
   
   <!-- Process Section -->
   <section id="process" class="process">
-    <div class="features__header">
+    <div class="process__header">
+      <h2 class="features__title">From Concept to Conversion<br/><span class="text-gradient">In 7 Days</span></h2>
+      <p class="features__subtitle">
+        Our streamlined process ensures rapid deployment without compromising quality
+      </p>
+    </div>
+    
+    <div class="process__timeline">
+      <div class="process__step">
+        <div class="process__step-content">
+          <h3>Discovery & Strategy</h3>
+          <p>We analyze your market, understand your ideal client, and craft a conversion strategy tailored to your business.</p>
+        </div>
+        <div class="process__step-number">1</div>
+      </div>
+      
+      <div class="process__step">
+        <div class="process__step-content">
+          <h3>Design & Development</h3>
+          <p>Our team creates your custom landing page and configures your AI assistant with your specific sales process.</p>
+        </div>
+        <div class="process__step-number">2</div>
+      </div>
+      
+      <div class="process__step">
+        <div class="process__step-content">
+          <h3>Integration & Testing</h3>
+          <p>We connect your calendar, payment systems, and ensure everything works flawlessly before launch.</p>
+        </div>
+        <div class="process__step-number">3</div>
+      </div>
+      
+      <div class="process__step">
+        <div class="process__step-content">
+          <h3>Launch & Optimize</h3>
+          <p>Your funnel goes live and starts converting visitors into clients while we monitor and optimize performance.</p>
+        </div>
+        <div class="process__step-number">4</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <div class="pricing__header">
+      <h2 class="features__title">Simple, Transparent<br/><span class="text-gradient">Investment</span></h2>
+      <p class="features__subtitle">
+        No hidden fees, no monthly retainers. Just one investment in your growth.
+      </p>
+    </div>
+    
+    <div class="pricing__card">
+      <div class="hero__badge">
+        <span>Most Popular</span>
+      </div>
+      <h3>Complete AI Funnel System</h3>
+      <div class="pricing__price">$2,500</div>
+      <p style="color: var(--neutral-400); margin-bottom: var(--space-2xl);">One-time investment</p>
+      
+      <ul class="pricing__features">
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Custom AI-powered sales funnel
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Professional landing page design
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Intelligent chatbot configuration
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Calendly & Stripe integration
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Conversion-focused copywriting
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          7-day delivery guarantee
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          30-day performance optimization
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Analytics dashboard access
+        </li>
+      </ul>
+      
+      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn--primary btn--large" style="width: 100%; margin-top: var(--space-2xl);" target="_blank" rel="noopener">
+        Get Started Today
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="testimonials__header">
+      <h2 class="features__title">Success Stories From<br/><span class="text-gradient">Real Clients</span></h2>
+      <p class="features__subtitle">
+        See how businesses like yours are transforming their client acquisition
+      </p>
+    </div>
+    
+    <div class="testimonials__grid">
+      <div class="testimonial">
+        <div class="testimonial__rating">
+          ★★★★★
+        </div>
+        <p class="testimonial__quote">
+          "I closed 3 new clients in the first week. The AI handles objections better than most salespeople I've worked with. This system is a game-changer for my agency."
+        </p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">MJ</div>
+          <div class="testimonial__info">
+            <div class="testimonial__name">Marcus Johnson</div>
+            <div class="testimonial__role">Agency Owner</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial">
+        <div class="testimonial__rating">
+          ★★★★★
+        </div>
+        <p class="testimonial__quote">
+          "A complete, professional funnel live in just 5 days. Zero tech headaches, just pure results. My calendar is now booked solid with qualified leads."
+        </p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">AT</div>
+          <div class="testimonial__info">
+            <div class="testimonial__name">Alicia Thompson</div>
+            <div class="testimonial__role">Business Consultant</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial">
+        <div class="testimonial__rating">
+          ★★★★★
+        </div>
+        <p class="testimonial__quote">
+          "FrontendDialed did everything for me — I just had to show up to the calls. The ROI was immediate. Best investment I've made in my coaching business."
+        </p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">DM</div>
+          <div class="testimonial__info">
+            <div class="testimonial__name">Darnell Mitchell</div>
+            <div class="testimonial__role">Executive Coach</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Chatbot Demo Section -->
+  <section id="demo" class="chatbot-demo">
+    <div class="chatbot-demo__container">
+      <div class="chatbot-demo__content">
+        <h2 class="chatbot-demo__title">Experience Your Future<br/><span class="text-gradient">AI Sales Assistant</span></h2>
+        <p class="chatbot-demo__description">
+          This is the exact AI system that will be embedded on your landing page — trained specifically 
+          for your business, qualifying leads and booking calls 24/7.
+        </p>
+        
+        <ul class="chatbot-demo__features">
+          <li class="chatbot-demo__feature">
+            <span class="pricing__feature-icon">✓</span>
+            Handles complex objections intelligently
+          </li>
+          <li class="chatbot-demo__feature">
+            <span class="pricing__feature-icon">✓</span>
+            Qualifies leads based on your criteria
+          </li>
+          <li class="chatbot-demo__feature">
+            <span class="pricing__feature-icon">✓</span>
+            Books calls directly to your calendar
+          </li>
+          <li class="chatbot-demo__feature">
+            <span class="pricing__feature-icon">✓</span>
+            Processes payments automatically
+          </li>
+        </ul>
+        
+        <a href="#cta" class="btn btn--primary btn--large">
+          Deploy Your AI Assistant
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="chatbot-demo__frame-wrapper">
+        <iframe
+          class="chatbot-demo__frame"
+          src="https://www.chatbase.co/chatbot-iframe/7F__-FE_5uXmAEJgL82dN"
+          title="AI Sales Assistant Demo"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section id="cta" class="cta">
+    <div class="cta__container">
+      <div class="cta__badge">
+        <div class="hero__badge-icon" style="background: var(--error-500);"></div>
+        <span>Limited Availability</span>
+      </div>
+      
+      <h2 class="cta__title">Only 5 Funnel Slots<br/>Remaining This Month</h2>
+      <p class="cta__description">
+        Due to our commitment to quality and personalized service, we only accept a limited number 
+        of projects each month. Secure your spot before they're gone.
+      </p>
+      
+      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn--primary btn--large shadow-glow" target="_blank" rel="noopener">
+        Claim Your Slot Now
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <div class="nav__logo-icon">FD</div>
+          <span>FrontendDialed</span>
+        </div>
+        <p class="footer__description">
+          Enterprise-grade AI funnels that transform your business. 
+          We handle the technology, you handle the growth.
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="mailto:seanmnr20@gmail.com" class="footer__social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer__column">
+        <h4 class="footer__title">Product</h4>
+        <ul class="footer__links">
+          <li><a href="#features" class="footer__link">Features</a></li>
+          <li><a href="#pricing" class="footer__link">Pricing</a></li>
+          <li><a href="#demo" class="footer__link">Live Demo</a></li>
+          <li><a href="#" class="footer__link">API Access</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer__column">
+        <h4 class="footer__title">Company</h4>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">About Us</a></li>
+          <li><a href="#" class="footer__link">Case Studies</a></li>
+          <li><a href="#" class="footer__link">Careers</a></li>
+          <li><a href="#" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer__column">
+        <h4 class="footer__title">Resources</h4>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Documentation</a></li>
+          <li><a href="#" class="footer__link">Blog</a></li>
+          <li><a href="#" class="footer__link">Support</a></li>
+          <li><a href="#" class="footer__link">Status</a></li>
+        </ul>
