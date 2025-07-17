@@ -4,26 +4,30 @@
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <meta name="description" content="Enterprise AI-powered client acquisition systems. Transform your business with intelligent automation that converts, qualifies, and closes deals 24/7."/>
-  <meta name="keywords" content="AI sales automation, client acquisition, lead generation, conversion optimization"/>
+  <meta name="keywords" content="AI sales automation, client acquisition, lead generation, conversion optimization, enterprise software"/>
   <meta property="og:title" content="FrontendDialed - Enterprise AI Client Acquisition"/>
   <meta property="og:description" content="Deploy sophisticated AI-powered funnels that transform visitors into clients. Enterprise-grade automation delivered in 7 days."/>
+  <meta property="og:type" content="website"/>
   <meta property="og:image" content="https://frontenddialed.com/og-image.jpg"/>
   <meta property="og:url" content="https://frontenddialed.com"/>
   <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="FrontendDialed - Enterprise AI Client Acquisition"/>
+  <meta name="twitter:description" content="Deploy sophisticated AI-powered funnels in 7 days"/>
   
   <title>FrontendDialed - Enterprise AI Client Acquisition Systems</title>
   
-  <!-- Preconnect to external domains -->
+  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   
-  <!-- Advanced Typography Stack -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Premium Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   
   <style>
-    /* Advanced CSS Architecture with Custom Properties */
+    /* CSS Custom Properties for Enterprise Design System */
     :root {
-      /* Sophisticated Color System */
+      /* Advanced Color Palette */
+      --primary-950: #020617;
       --primary-900: #0A0E1A;
       --primary-800: #0F1629;
       --primary-700: #141E3C;
@@ -35,6 +39,7 @@
       --primary-100: #9BB5F0;
       --primary-50: #E6EFFF;
       
+      --accent-600: #2563EB;
       --accent-500: #3A86FF;
       --accent-400: #5B9AFF;
       --accent-300: #7CAEFF;
@@ -56,7 +61,7 @@
       --warning-500: #F59E0B;
       --error-500: #EF4444;
       
-      /* Advanced Spacing System */
+      /* Spacing System */
       --space-xs: 0.25rem;
       --space-sm: 0.5rem;
       --space-md: 1rem;
@@ -65,8 +70,9 @@
       --space-2xl: 3rem;
       --space-3xl: 4rem;
       --space-4xl: 6rem;
+      --space-5xl: 8rem;
       
-      /* Premium Typography Scale */
+      /* Typography Scale */
       --font-size-xs: clamp(0.75rem, 0.7vw + 0.5rem, 0.875rem);
       --font-size-sm: clamp(0.875rem, 0.8vw + 0.6rem, 1rem);
       --font-size-base: clamp(1rem, 1vw + 0.7rem, 1.125rem);
@@ -77,35 +83,36 @@
       --font-size-4xl: clamp(2.5rem, 4vw + 1.5rem, 4rem);
       --font-size-5xl: clamp(3rem, 5vw + 2rem, 5rem);
       
-      /* Animation Timing Functions */
+      /* Animation */
       --ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
       --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
       --ease-in-out-quart: cubic-bezier(0.76, 0, 0.24, 1);
       
       /* Shadows */
-      --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
-      --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-      --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
-      --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
-      --shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
-      --shadow-glow: 0 0 50px rgb(58 134 255 / 0.3);
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      --shadow-glow: 0 0 50px rgba(58, 134, 255, 0.3);
       
       /* Gradients */
       --gradient-primary: linear-gradient(135deg, var(--primary-900) 0%, var(--primary-800) 50%, var(--primary-700) 100%);
       --gradient-accent: linear-gradient(135deg, var(--accent-400) 0%, var(--accent-500) 100%);
-      --gradient-mesh: radial-gradient(at 40% 20%, var(--primary-600) 0%, transparent 50%),
-                       radial-gradient(at 80% 0%, var(--primary-700) 0%, transparent 50%),
-                       radial-gradient(at 0% 50%, var(--primary-800) 0%, transparent 50%);
+      --gradient-dark: linear-gradient(180deg, var(--primary-950) 0%, var(--primary-900) 100%);
+      --gradient-mesh: radial-gradient(at 40% 20%, rgba(58, 134, 255, 0.15) 0%, transparent 50%),
+                       radial-gradient(at 80% 0%, rgba(42, 63, 126, 0.15) 0%, transparent 50%),
+                       radial-gradient(at 0% 50%, rgba(26, 39, 84, 0.15) 0%, transparent 50%);
     }
     
-    /* Reset with Performance Optimizations */
+    /* Global Reset */
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
     
-    /* Base Styles */
+    /* Base */
     html {
       font-size: 16px;
       scroll-behavior: smooth;
@@ -119,12 +126,13 @@
       font-weight: 400;
       line-height: 1.6;
       color: var(--neutral-50);
-      background: var(--primary-900);
+      background: var(--primary-950);
       overflow-x: hidden;
       position: relative;
+      min-height: 100vh;
     }
     
-    /* Advanced Background Effects */
+    /* Background Effects */
     body::before {
       content: '';
       position: fixed;
@@ -133,23 +141,25 @@
       right: 0;
       bottom: 0;
       background: var(--gradient-mesh);
-      opacity: 0.4;
+      opacity: 0.6;
       z-index: -2;
+      pointer-events: none;
     }
     
-    /* Animated Gradient Orbs */
+    /* Animated Orbs */
     .orb {
       position: fixed;
       border-radius: 50%;
-      filter: blur(100px);
-      opacity: 0.3;
+      filter: blur(80px);
+      opacity: 0.4;
       animation: float 20s infinite ease-in-out;
       z-index: -1;
+      pointer-events: none;
     }
     
     .orb-1 {
-      width: 600px;
-      height: 600px;
+      width: 500px;
+      height: 500px;
       background: var(--accent-500);
       top: -200px;
       left: -200px;
@@ -157,8 +167,8 @@
     }
     
     .orb-2 {
-      width: 800px;
-      height: 800px;
+      width: 600px;
+      height: 600px;
       background: var(--primary-500);
       bottom: -300px;
       right: -300px;
@@ -166,8 +176,8 @@
     }
     
     .orb-3 {
-      width: 500px;
-      height: 500px;
+      width: 400px;
+      height: 400px;
       background: var(--accent-400);
       top: 50%;
       left: 50%;
@@ -184,13 +194,18 @@
     
     /* Typography */
     h1, h2, h3, h4, h5, h6 {
-      font-family: 'SF Pro Display', 'Inter', sans-serif;
       font-weight: 700;
       line-height: 1.2;
       letter-spacing: -0.02em;
     }
     
-    /* Advanced Navigation */
+    /* Links */
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    
+    /* Navigation */
     .nav {
       position: fixed;
       top: 0;
@@ -198,21 +213,21 @@
       right: 0;
       z-index: 1000;
       backdrop-filter: blur(20px) saturate(180%);
-      background: rgba(10, 14, 26, 0.7);
+      background: rgba(2, 6, 23, 0.7);
       border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       transition: all 0.3s var(--ease-out-quart);
     }
     
     .nav.scrolled {
       backdrop-filter: blur(30px) saturate(200%);
-      background: rgba(10, 14, 26, 0.85);
+      background: rgba(2, 6, 23, 0.85);
       box-shadow: var(--shadow-lg);
     }
     
     .nav__container {
       max-width: 1400px;
       margin: 0 auto;
-      padding: 1.5rem 2rem;
+      padding: 1.25rem 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -233,8 +248,8 @@
     }
     
     .nav__logo-icon {
-      width: 40px;
-      height: 40px;
+      width: 42px;
+      height: 42px;
       background: var(--gradient-accent);
       border-radius: 12px;
       display: flex;
@@ -243,6 +258,29 @@
       font-weight: 800;
       font-size: 1.25rem;
       box-shadow: var(--shadow-glow);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .nav__logo-icon::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transform: rotate(45deg);
+      transition: all 0.6s;
+    }
+    
+    .nav__logo:hover .nav__logo-icon::before {
+      animation: shine 0.6s ease-in-out;
+    }
+    
+    @keyframes shine {
+      0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+      100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
     }
     
     .nav__links {
@@ -256,10 +294,9 @@
       color: var(--neutral-200);
       font-size: 0.95rem;
       font-weight: 500;
-      text-decoration: none;
       position: relative;
-      transition: color 0.3s ease;
       padding: 0.5rem 0;
+      transition: color 0.3s ease;
     }
     
     .nav__link::after {
@@ -281,7 +318,7 @@
       width: 100%;
     }
     
-    /* Premium Button Styles */
+    /* Buttons */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -291,7 +328,7 @@
       font-size: 0.95rem;
       font-weight: 600;
       border-radius: 12px;
-      text-decoration: none;
+      border: none;
       transition: all 0.3s var(--ease-out-quart);
       cursor: pointer;
       position: relative;
@@ -346,6 +383,16 @@
       font-size: 1.125rem;
     }
     
+    .btn svg {
+      width: 20px;
+      height: 20px;
+      transition: transform 0.3s ease;
+    }
+    
+    .btn:hover svg {
+      transform: translateX(2px);
+    }
+    
     /* Hero Section */
     .hero {
       min-height: 100vh;
@@ -357,6 +404,12 @@
       padding: var(--space-4xl) var(--space-xl);
       position: relative;
       overflow: hidden;
+    }
+    
+    .hero__content {
+      max-width: 1000px;
+      margin: 0 auto;
+      z-index: 1;
     }
     
     .hero__badge {
@@ -374,19 +427,16 @@
     }
     
     .hero__badge-icon {
-      width: 16px;
-      height: 16px;
+      width: 8px;
+      height: 8px;
       background: var(--accent-500);
       border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       animation: pulse 2s infinite;
     }
     
     @keyframes pulse {
       0%, 100% { transform: scale(1); opacity: 1; }
-      50% { transform: scale(1.2); opacity: 0.7; }
+      50% { transform: scale(1.5); opacity: 0.5; }
     }
     
     .hero__title {
@@ -396,6 +446,7 @@
       background: linear-gradient(135deg, var(--neutral-50) 0%, var(--neutral-200) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
       animation: fadeInUp 0.8s var(--ease-out-quart) 0.1s both;
     }
     
@@ -416,10 +467,12 @@
       animation: fadeInUp 0.8s var(--ease-out-quart) 0.3s both;
     }
     
-    /* Stats Strip */
+    /* Stats */
     .stats {
       display: flex;
       gap: var(--space-3xl);
+      justify-content: center;
+      flex-wrap: wrap;
       margin-top: var(--space-3xl);
       animation: fadeInUp 0.8s var(--ease-out-quart) 0.4s both;
     }
@@ -434,6 +487,7 @@
       background: var(--gradient-accent);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     
     .stat__label {
@@ -445,8 +499,9 @@
     
     /* Features Section */
     .features {
-      padding: var(--space-4xl) var(--space-xl);
+      padding: var(--space-5xl) var(--space-xl);
       position: relative;
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.02) 50%, transparent 100%);
     }
     
     .features__header {
@@ -455,12 +510,12 @@
       margin: 0 auto var(--space-3xl);
     }
     
-    .features__title {
+    .section__title {
       font-size: var(--font-size-4xl);
       margin-bottom: var(--space-lg);
     }
     
-    .features__subtitle {
+    .section__subtitle {
       font-size: var(--font-size-lg);
       color: var(--neutral-300);
     }
@@ -475,7 +530,7 @@
     
     .feature-card {
       background: rgba(255, 255, 255, 0.02);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.05);
       border-radius: 24px;
       padding: var(--space-2xl);
@@ -517,6 +572,12 @@
       justify-content: center;
       margin-bottom: var(--space-xl);
       font-size: 2rem;
+      transition: all 0.3s ease;
+    }
+    
+    .feature-card:hover .feature-card__icon {
+      background: rgba(58, 134, 255, 0.2);
+      transform: scale(1.1);
     }
     
     .feature-card__title {
@@ -532,15 +593,9 @@
     
     /* Process Section */
     .process {
-      padding: var(--space-4xl) var(--space-xl);
+      padding: var(--space-5xl) var(--space-xl);
       background: rgba(255, 255, 255, 0.01);
-      backdrop-filter: blur(10px);
-    }
-    
-    .process__header {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto var(--space-3xl);
+      position: relative;
     }
     
     .process__timeline {
@@ -575,8 +630,26 @@
       flex: 1;
       padding: var(--space-xl);
       background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(10px);
       border-radius: 16px;
       border: 1px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.3s ease;
+    }
+    
+    .process__step-content:hover {
+      background: rgba(255, 255, 255, 0.04);
+      transform: translateY(-4px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .process__step-content h3 {
+      font-size: var(--font-size-xl);
+      margin-bottom: var(--space-sm);
+    }
+    
+    .process__step-content p {
+      color: var(--neutral-300);
+      line-height: 1.6;
     }
     
     .process__step-number {
@@ -593,17 +666,13 @@
       left: 50%;
       transform: translateX(-50%);
       z-index: 10;
+      box-shadow: var(--shadow-glow);
     }
     
     /* Pricing Section */
     .pricing {
-      padding: var(--space-4xl) var(--space-xl);
+      padding: var(--space-5xl) var(--space-xl);
       text-align: center;
-    }
-    
-    .pricing__header {
-      max-width: 800px;
-      margin: 0 auto var(--space-3xl);
     }
     
     .pricing__card {
@@ -615,6 +684,12 @@
       padding: var(--space-3xl);
       position: relative;
       overflow: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .pricing__card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(58, 134, 255, 0.2);
     }
     
     .pricing__card::before {
@@ -641,6 +716,7 @@
       background: var(--gradient-accent);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
     
     .pricing__features {
@@ -660,18 +736,14 @@
     .pricing__feature-icon {
       color: var(--success-500);
       font-size: 1.25rem;
+      flex-shrink: 0;
     }
     
     /* Testimonials */
     .testimonials {
-      padding: var(--space-4xl) var(--space-xl);
+      padding: var(--space-5xl) var(--space-xl);
+      background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.02) 50%, transparent 100%);
       overflow: hidden;
-    }
-    
-    .testimonials__header {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto var(--space-3xl);
     }
     
     .testimonials__grid {
@@ -684,11 +756,25 @@
     
     .testimonial {
       background: rgba(255, 255, 255, 0.02);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(20px);
       border: 1px solid rgba(255, 255, 255, 0.05);
       border-radius: 24px;
       padding: var(--space-2xl);
       position: relative;
+      transition: all 0.3s ease;
+    }
+    
+    .testimonial:hover {
+      transform: translateY(-4px);
+      background: rgba(255, 255, 255, 0.04);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+    
+    .testimonial__rating {
+      display: flex;
+      gap: 0.25rem;
+      margin-bottom: var(--space-md);
+      color: var(--warning-500);
     }
     
     .testimonial__quote {
@@ -714,6 +800,7 @@
       justify-content: center;
       font-weight: 700;
       font-size: 1.25rem;
+      color: white;
     }
     
     .testimonial__info {
@@ -730,881 +817,4 @@
       color: var(--neutral-400);
     }
     
-    .testimonial__rating {
-      display: flex;
-      gap: 0.25rem;
-      margin-bottom: var(--space-md);
-      color: var(--warning-500);
-    }
-    
     /* Chatbot Demo Section */
-    .chatbot-demo {
-      padding: var(--space-4xl) var(--space-xl);
-      background: rgba(255, 255, 255, 0.01);
-    }
-    
-    .chatbot-demo__container {
-      max-width: 1200px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: var(--space-3xl);
-      align-items: center;
-    }
-    
-    .chatbot-demo__content {
-      padding-right: var(--space-2xl);
-    }
-    
-    .chatbot-demo__title {
-      font-size: var(--font-size-3xl);
-      margin-bottom: var(--space-xl);
-    }
-    
-    .chatbot-demo__description {
-      font-size: var(--font-size-lg);
-      color: var(--neutral-300);
-      margin-bottom: var(--space-2xl);
-      line-height: 1.7;
-    }
-    
-    .chatbot-demo__features {
-      list-style: none;
-      margin-bottom: var(--space-2xl);
-    }
-    
-    .chatbot-demo__feature {
-      display: flex;
-      align-items: center;
-      gap: var(--space-md);
-      padding: var(--space-sm) 0;
-      color: var(--neutral-200);
-    }
-    
-    .chatbot-demo__frame-wrapper {
-      position: relative;
-      border-radius: 24px;
-      overflow: hidden;
-      box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
-    }
-    
-    .chatbot-demo__frame {
-      width: 100%;
-      height: 700px;
-      border: none;
-      background: white;
-    }
-    
-    /* CTA Section */
-    .cta {
-      padding: var(--space-4xl) var(--space-xl);
-      text-align: center;
-    }
-    
-    .cta__container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: var(--space-3xl);
-      background: rgba(58, 134, 255, 0.05);
-      border: 2px solid rgba(58, 134, 255, 0.2);
-      border-radius: 32px;
-      position: relative;
-      overflow: hidden;
-    }
-    
-    .cta__badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.5rem 1rem;
-      background: rgba(239, 68, 68, 0.1);
-      border: 1px solid rgba(239, 68, 68, 0.3);
-      border-radius: 50px;
-      font-size: var(--font-size-sm);
-      color: var(--error-500);
-      margin-bottom: var(--space-xl);
-    }
-    
-    .cta__title {
-      font-size: var(--font-size-3xl);
-      margin-bottom: var(--space-lg);
-    }
-    
-    .cta__description {
-      font-size: var(--font-size-lg);
-      color: var(--neutral-300);
-      margin-bottom: var(--space-2xl);
-    }
-    
-    /* Footer */
-    .footer {
-      padding: var(--space-3xl) var(--space-xl);
-      background: rgba(0, 0, 0, 0.3);
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-    }
-    
-    .footer__container {
-      max-width: 1400px;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: var(--space-3xl);
-    }
-    
-    .footer__brand {
-      padding-right: var(--space-2xl);
-    }
-    
-    .footer__logo {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--neutral-50);
-      margin-bottom: var(--space-lg);
-    }
-    
-    .footer__description {
-      color: var(--neutral-400);
-      line-height: 1.7;
-      margin-bottom: var(--space-xl);
-    }
-    
-    .footer__social {
-      display: flex;
-      gap: var(--space-md);
-    }
-    
-    .footer__social-link {
-      width: 40px;
-      height: 40px;
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--neutral-400);
-      transition: all 0.3s ease;
-    }
-    
-    .footer__social-link:hover {
-      background: var(--accent-500);
-      color: white;
-      transform: translateY(-2px);
-    }
-    
-    .footer__column {
-      padding: 0 var(--space-md);
-    }
-    
-    .footer__title {
-      font-size: var(--font-size-base);
-      font-weight: 600;
-      color: var(--neutral-50);
-      margin-bottom: var(--space-lg);
-    }
-    
-    .footer__links {
-      list-style: none;
-    }
-    
-    .footer__link {
-      color: var(--neutral-400);
-      text-decoration: none;
-      display: block;
-      padding: var(--space-xs) 0;
-      transition: color 0.3s ease;
-    }
-    
-    .footer__link:hover {
-      color: var(--neutral-50);
-    }
-    
-    .footer__bottom {
-      margin-top: var(--space-3xl);
-      padding-top: var(--space-2xl);
-      border-top: 1px solid rgba(255, 255, 255, 0.05);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: var(--neutral-500);
-      font-size: var(--font-size-sm);
-    }
-    
-    /* Animations */
-    @keyframes fadeInUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    
-    /* Mobile Menu */
-    .mobile-menu-toggle {
-      display: none;
-      flex-direction: column;
-      gap: 4px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem;
-    }
-    
-    .mobile-menu-toggle span {
-      width: 24px;
-      height: 2px;
-      background: var(--neutral-50);
-      transition: all 0.3s ease;
-    }
-    
-    .mobile-menu {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--primary-900);
-      z-index: 999;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      opacity: 0;
-      visibility: hidden;
-      transition: all 0.3s ease;
-    }
-    
-    .mobile-menu.active {
-      opacity: 1;
-      visibility: visible;
-    }
-    
-    .mobile-menu__links {
-      list-style: none;
-      text-align: center;
-    }
-    
-    .mobile-menu__link {
-      display: block;
-      padding: var(--space-lg);
-      font-size: var(--font-size-xl);
-      color: var(--neutral-50);
-      text-decoration: none;
-    }
-    
-    /* Responsive Design */
-    @media (max-width: 1024px) {
-      .nav__links {
-        display: none;
-      }
-      
-      .mobile-menu-toggle {
-        display: flex;
-      }
-      
-      .hero__title {
-        font-size: var(--font-size-4xl);
-      }
-      
-      .features__grid,
-      .testimonials__grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .chatbot-demo__container {
-        grid-template-columns: 1fr;
-      }
-      
-      .chatbot-demo__content {
-        padding-right: 0;
-        margin-bottom: var(--space-2xl);
-      }
-      
-      .footer__container {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-      
-      .footer__social {
-        justify-content: center;
-      }
-      
-      .footer__bottom {
-        flex-direction: column;
-        gap: var(--space-md);
-        text-align: center;
-      }
-    }
-    
-    @media (max-width: 640px) {
-      .hero {
-        padding: var(--space-3xl) var(--space-lg);
-      }
-      
-      .hero__title {
-        font-size: var(--font-size-3xl);
-      }
-      
-      .hero__subtitle {
-        font-size: var(--font-size-base);
-      }
-      
-      .hero__cta {
-        flex-direction: column;
-        width: 100%;
-      }
-      
-      .btn {
-        width: 100%;
-      }
-      
-      .stats {
-        flex-direction: column;
-        gap: var(--space-xl);
-      }
-      
-      .features__grid,
-      .testimonials__grid {
-        grid-template-columns: 1fr;
-        gap: var(--space-lg);
-      }
-      
-      .feature-card {
-        padding: var(--space-xl);
-      }
-      
-      .process__step {
-        flex-direction: column !important;
-      }
-      
-      .process__timeline::before {
-        display: none;
-      }
-      
-      .process__step-number {
-        position: relative;
-        left: auto;
-        transform: none;
-        margin-bottom: var(--space-lg);
-      }
-    }
-    
-    /* Utility Classes */
-    .text-gradient {
-      background: var(--gradient-accent);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    
-    .shadow-glow {
-      box-shadow: var(--shadow-glow);
-    }
-    
-    .backdrop-blur {
-      backdrop-filter: blur(20px);
-    }
-    
-    /* Loading Animation */
-    .loader {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: var(--primary-900);
-      z-index: 9999;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: opacity 0.5s ease;
-    }
-    
-    .loader.loaded {
-      opacity: 0;
-      pointer-events: none;
-    }
-    
-    .loader__spinner {
-      width: 50px;
-      height: 50px;
-      border: 3px solid rgba(255, 255, 255, 0.1);
-      border-top-color: var(--accent-500);
-      border-radius: 50%;
-      animation: spin 1s linear infinite;
-    }
-    
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-  </style>
-</head>
-<body>
-  <!-- Loading Screen -->
-  <div class="loader" id="loader">
-    <div class="loader__spinner"></div>
-  </div>
-  
-  <!-- Animated Background Orbs -->
-  <div class="orb orb-1"></div>
-  <div class="orb orb-2"></div>
-  <div class="orb orb-3"></div>
-  
-  <!-- Navigation -->
-  <nav class="nav" id="navbar">
-    <div class="nav__container">
-      <a href="#" class="nav__logo">
-        <div class="nav__logo-icon">FD</div>
-        <span>FrontendDialed</span>
-      </a>
-      
-      <ul class="nav__links">
-        <li><a href="#features" class="nav__link">Features</a></li>
-        <li><a href="#process" class="nav__link">Process</a></li>
-        <li><a href="#pricing" class="nav__link">Pricing</a></li>
-        <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
-        <li><a href="#demo" class="nav__link">Demo</a></li>
-      </ul>
-      
-      <a href="https://calendly.com/seanmnr20/30min" class="btn btn--primary" target="_blank" rel="noopener">
-        Book Strategy Call
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M7 17L17 7M17 7H7M17 7V17"/>
-        </svg>
-      </a>
-      
-      <button class="mobile-menu-toggle" id="mobileMenuToggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-  </nav>
-  
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <ul class="mobile-menu__links">
-      <li><a href="#features" class="mobile-menu__link">Features</a></li>
-      <li><a href="#process" class="mobile-menu__link">Process</a></li>
-      <li><a href="#pricing" class="mobile-menu__link">Pricing</a></li>
-      <li><a href="#testimonials" class="mobile-menu__link">Testimonials</a></li>
-      <li><a href="#demo" class="mobile-menu__link">Demo</a></li>
-      <li><a href="https://calendly.com/seanmnr20/30min" class="mobile-menu__link" target="_blank">Book Call</a></li>
-    </ul>
-  </div>
-  
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero__badge">
-      <div class="hero__badge-icon"></div>
-      <span>AI-Powered Client Acquisition</span>
-    </div>
-    
-    <h1 class="hero__title">
-      Transform Visitors Into Clients<br/>
-      <span class="text-gradient">While You Sleep</span>
-    </h1>
-    
-    <p class="hero__subtitle">
-      Deploy enterprise-grade AI funnels that qualify, nurture, and convert leads 24/7.
-      Complete client acquisition systems delivered in 7 days or less.
-    </p>
-    
-    <div class="hero__cta">
-      <a href="https://calendly.com/seanmnr20/30min" class="btn btn--primary btn--large" target="_blank" rel="noopener">
-        Start Building Your Funnel
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M7 17L17 7M17 7H7M17 7V17"/>
-        </svg>
-      </a>
-      <a href="#demo" class="btn btn--secondary btn--large">
-        See Live Demo
-      </a>
-    </div>
-    
-    <div class="stats">
-      <div class="stat">
-        <div class="stat__number">87%</div>
-        <div class="stat__label">Conversion Rate</div>
-      </div>
-      <div class="stat">
-        <div class="stat__number">24/7</div>
-        <div class="stat__label">Always Active</div>
-      </div>
-      <div class="stat">
-        <div class="stat__number">7 Days</div>
-        <div class="stat__label">Time to Launch</div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Features Section -->
-  <section id="features" class="features">
-    <div class="features__header">
-      <h2 class="features__title">Everything You Need to<br/><span class="text-gradient">Automate Growth</span></h2>
-      <p class="features__subtitle">
-        Our comprehensive solution handles every aspect of your client acquisition process
-      </p>
-    </div>
-    
-    <div class="features__grid">
-      <div class="feature-card">
-        <div class="feature-card__icon">🎨</div>
-        <h3 class="feature-card__title">Custom Landing Pages</h3>
-        <p class="feature-card__description">
-          Conversion-optimized pages designed specifically for your market. Clean layouts, 
-          persuasive copy, and psychological triggers that drive action.
-        </p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-card__icon">🤖</div>
-        <h3 class="feature-card__title">AI Sales Assistant</h3>
-        <p class="feature-card__description">
-          Intelligent chatbot that qualifies leads, handles objections, and guides prospects 
-          through your sales process 24/7 with human-like conversations.
-        </p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-card__icon">📅</div>
-        <h3 class="feature-card__title">Seamless Integration</h3>
-        <p class="feature-card__description">
-          Direct integration with Calendly for scheduling and Stripe for payments. 
-          Qualified leads flow directly into your existing workflow.
-        </p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-card__icon">📊</div>
-        <h3 class="feature-card__title">Analytics Dashboard</h3>
-        <p class="feature-card__description">
-          Real-time insights into visitor behavior, conversion rates, and AI performance. 
-          Make data-driven decisions to optimize your funnel.
-        </p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-card__icon">⚡</div>
-        <h3 class="feature-card__title">Lightning Fast</h3>
-        <p class="feature-card__description">
-          Built on cutting-edge infrastructure for instant load times and seamless 
-          interactions. Your funnel performs flawlessly at any scale.
-        </p>
-      </div>
-      
-      <div class="feature-card">
-        <div class="feature-card__icon">🔒</div>
-        <h3 class="feature-card__title">Enterprise Security</h3>
-        <p class="feature-card__description">
-          Bank-level encryption and compliance with data protection regulations. 
-          Your leads and customer data are always secure.
-        </p>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Process Section -->
-  <section id="process" class="process">
-    <div class="process__header">
-      <h2 class="features__title">From Concept to Conversion<br/><span class="text-gradient">In 7 Days</span></h2>
-      <p class="features__subtitle">
-        Our streamlined process ensures rapid deployment without compromising quality
-      </p>
-    </div>
-    
-    <div class="process__timeline">
-      <div class="process__step">
-        <div class="process__step-content">
-          <h3>Discovery & Strategy</h3>
-          <p>We analyze your market, understand your ideal client, and craft a conversion strategy tailored to your business.</p>
-        </div>
-        <div class="process__step-number">1</div>
-      </div>
-      
-      <div class="process__step">
-        <div class="process__step-content">
-          <h3>Design & Development</h3>
-          <p>Our team creates your custom landing page and configures your AI assistant with your specific sales process.</p>
-        </div>
-        <div class="process__step-number">2</div>
-      </div>
-      
-      <div class="process__step">
-        <div class="process__step-content">
-          <h3>Integration & Testing</h3>
-          <p>We connect your calendar, payment systems, and ensure everything works flawlessly before launch.</p>
-        </div>
-        <div class="process__step-number">3</div>
-      </div>
-      
-      <div class="process__step">
-        <div class="process__step-content">
-          <h3>Launch & Optimize</h3>
-          <p>Your funnel goes live and starts converting visitors into clients while we monitor and optimize performance.</p>
-        </div>
-        <div class="process__step-number">4</div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Pricing Section -->
-  <section id="pricing" class="pricing">
-    <div class="pricing__header">
-      <h2 class="features__title">Simple, Transparent<br/><span class="text-gradient">Investment</span></h2>
-      <p class="features__subtitle">
-        No hidden fees, no monthly retainers. Just one investment in your growth.
-      </p>
-    </div>
-    
-    <div class="pricing__card">
-      <div class="hero__badge">
-        <span>Most Popular</span>
-      </div>
-      <h3>Complete AI Funnel System</h3>
-      <div class="pricing__price">$2,500</div>
-      <p style="color: var(--neutral-400); margin-bottom: var(--space-2xl);">One-time investment</p>
-      
-      <ul class="pricing__features">
-        <li class="pricing__feature">
-          <span class="pricing__feature-icon">✓</span>
-          Custom AI-powered sales funnel
-        </li>
-        <li class="pricing__feature">
-          <span class="pricing__feature-icon">✓</span>
-          Professional landing page design
-        </li>
-        <li class="pricing__feature">
-          <span class="pricing__feature-icon">✓</span>
-          Intelligent chatbot configuration
-        </li>
-        <li class="pricing__feature">
-          <span class="pricing__feature-icon">✓</span>
-          Calendly & Stripe integration
-        </li>
-        <li class="pricing__feature">
-          <span class="pricing__feature-icon">✓</span>
-          Conversion-focused copywriting
-        </li>
-        <li class="pricing__feature">
-          <span class="pricing__feature-icon">✓</span>
-          7-day delivery guarantee
-        </li>
-        <li class="pricing__feature">
-          <span class="pricing__feature-icon">✓</span>
-          30-day performance optimization
-        </li>
-        <li class="pricing__feature">
-          <span class="pricing__feature-icon">✓</span>
-          Analytics dashboard access
-        </li>
-      </ul>
-      
-      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn--primary btn--large" style="width: 100%; margin-top: var(--space-2xl);" target="_blank" rel="noopener">
-        Get Started Today
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M7 17L17 7M17 7H7M17 7V17"/>
-        </svg>
-      </a>
-    </div>
-  </section>
-  
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="testimonials">
-    <div class="testimonials__header">
-      <h2 class="features__title">Success Stories From<br/><span class="text-gradient">Real Clients</span></h2>
-      <p class="features__subtitle">
-        See how businesses like yours are transforming their client acquisition
-      </p>
-    </div>
-    
-    <div class="testimonials__grid">
-      <div class="testimonial">
-        <div class="testimonial__rating">
-          ★★★★★
-        </div>
-        <p class="testimonial__quote">
-          "I closed 3 new clients in the first week. The AI handles objections better than most salespeople I've worked with. This system is a game-changer for my agency."
-        </p>
-        <div class="testimonial__author">
-          <div class="testimonial__avatar">MJ</div>
-          <div class="testimonial__info">
-            <div class="testimonial__name">Marcus Johnson</div>
-            <div class="testimonial__role">Agency Owner</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="testimonial">
-        <div class="testimonial__rating">
-          ★★★★★
-        </div>
-        <p class="testimonial__quote">
-          "A complete, professional funnel live in just 5 days. Zero tech headaches, just pure results. My calendar is now booked solid with qualified leads."
-        </p>
-        <div class="testimonial__author">
-          <div class="testimonial__avatar">AT</div>
-          <div class="testimonial__info">
-            <div class="testimonial__name">Alicia Thompson</div>
-            <div class="testimonial__role">Business Consultant</div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="testimonial">
-        <div class="testimonial__rating">
-          ★★★★★
-        </div>
-        <p class="testimonial__quote">
-          "FrontendDialed did everything for me — I just had to show up to the calls. The ROI was immediate. Best investment I've made in my coaching business."
-        </p>
-        <div class="testimonial__author">
-          <div class="testimonial__avatar">DM</div>
-          <div class="testimonial__info">
-            <div class="testimonial__name">Darnell Mitchell</div>
-            <div class="testimonial__role">Executive Coach</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Chatbot Demo Section -->
-  <section id="demo" class="chatbot-demo">
-    <div class="chatbot-demo__container">
-      <div class="chatbot-demo__content">
-        <h2 class="chatbot-demo__title">Experience Your Future<br/><span class="text-gradient">AI Sales Assistant</span></h2>
-        <p class="chatbot-demo__description">
-          This is the exact AI system that will be embedded on your landing page — trained specifically 
-          for your business, qualifying leads and booking calls 24/7.
-        </p>
-        
-        <ul class="chatbot-demo__features">
-          <li class="chatbot-demo__feature">
-            <span class="pricing__feature-icon">✓</span>
-            Handles complex objections intelligently
-          </li>
-          <li class="chatbot-demo__feature">
-            <span class="pricing__feature-icon">✓</span>
-            Qualifies leads based on your criteria
-          </li>
-          <li class="chatbot-demo__feature">
-            <span class="pricing__feature-icon">✓</span>
-            Books calls directly to your calendar
-          </li>
-          <li class="chatbot-demo__feature">
-            <span class="pricing__feature-icon">✓</span>
-            Processes payments automatically
-          </li>
-        </ul>
-        
-        <a href="#cta" class="btn btn--primary btn--large">
-          Deploy Your AI Assistant
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M7 17L17 7M17 7H7M17 7V17"/>
-          </svg>
-        </a>
-      </div>
-      
-      <div class="chatbot-demo__frame-wrapper">
-        <iframe
-          class="chatbot-demo__frame"
-          src="https://www.chatbase.co/chatbot-iframe/7F__-FE_5uXmAEJgL82dN"
-          title="AI Sales Assistant Demo"
-        ></iframe>
-      </div>
-    </div>
-  </section>
-  
-  <!-- CTA Section -->
-  <section id="cta" class="cta">
-    <div class="cta__container">
-      <div class="cta__badge">
-        <div class="hero__badge-icon" style="background: var(--error-500);"></div>
-        <span>Limited Availability</span>
-      </div>
-      
-      <h2 class="cta__title">Only 5 Funnel Slots<br/>Remaining This Month</h2>
-      <p class="cta__description">
-        Due to our commitment to quality and personalized service, we only accept a limited number 
-        of projects each month. Secure your spot before they're gone.
-      </p>
-      
-      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn--primary btn--large shadow-glow" target="_blank" rel="noopener">
-        Claim Your Slot Now
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <path d="M7 17L17 7M17 7H7M17 7V17"/>
-        </svg>
-      </a>
-    </div>
-  </section>
-  
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__brand">
-        <div class="footer__logo">
-          <div class="nav__logo-icon">FD</div>
-          <span>FrontendDialed</span>
-        </div>
-        <p class="footer__description">
-          Enterprise-grade AI funnels that transform your business. 
-          We handle the technology, you handle the growth.
-        </p>
-        <div class="footer__social">
-          <a href="#" class="footer__social-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
-            </svg>
-          </a>
-          <a href="#" class="footer__social-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-            </svg>
-          </a>
-          <a href="mailto:seanmnr20@gmail.com" class="footer__social-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-              <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-      
-      <div class="footer__column">
-        <h4 class="footer__title">Product</h4>
-        <ul class="footer__links">
-          <li><a href="#features" class="footer__link">Features</a></li>
-          <li><a href="#pricing" class="footer__link">Pricing</a></li>
-          <li><a href="#demo" class="footer__link">Live Demo</a></li>
-          <li><a href="#" class="footer__link">API Access</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer__column">
-        <h4 class="footer__title">Company</h4>
-        <ul class="footer__links">
-          <li><a href="#" class="footer__link">About Us</a></li>
-          <li><a href="#" class="footer__link">Case Studies</a></li>
-          <li><a href="#" class="footer__link">Careers</a></li>
-          <li><a href="#" class="footer__link">Contact</a></li>
-        </ul>
-      </div>
-      
-      <div class="footer__column">
-        <h4 class="footer__title">Resources</h4>
-        <ul class="footer__links">
-          <li><a href="#" class="footer__link">Documentation</a></li>
-          <li><a href="#" class="footer__link">Blog</a></li>
-          <li><a href="#" class="footer__link">Support</a></li>
-          <li><a href="#" class="footer__link">Status</a></li>
-        </ul>
