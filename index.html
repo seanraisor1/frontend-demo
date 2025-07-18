@@ -818,3 +818,1244 @@
     }
     
     /* Chatbot Demo Section */
+    .chatbot-demo {
+      padding: var(--space-5xl) var(--space-xl);
+      background: rgba(255, 255, 255, 0.01);
+    }
+    
+    .chatbot-demo__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-3xl);
+      align-items: center;
+    }
+    
+    .chatbot-demo__content {
+      padding-right: var(--space-2xl);
+    }
+    
+    .chatbot-demo__title {
+      font-size: var(--font-size-3xl);
+      margin-bottom: var(--space-xl);
+    }
+    
+    .chatbot-demo__description {
+      font-size: var(--font-size-lg);
+      color: var(--neutral-300);
+      margin-bottom: var(--space-2xl);
+      line-height: 1.7;
+    }
+    
+    .chatbot-demo__features {
+      list-style: none;
+      margin-bottom: var(--space-2xl);
+    }
+    
+    .chatbot-demo__feature {
+      display: flex;
+      align-items: center;
+      gap: var(--space-md);
+      padding: var(--space-sm) 0;
+      color: var(--neutral-200);
+    }
+    
+    .chatbot-demo__frame-wrapper {
+      position: relative;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 50px 100px rgba(0, 0, 0, 0.5);
+      background: rgba(255, 255, 255, 0.02);
+      padding: 2px;
+    }
+    
+    .chatbot-demo__frame-wrapper::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, var(--accent-500), var(--primary-500), var(--accent-400));
+      animation: rotate 4s linear infinite;
+      opacity: 0.3;
+    }
+    
+    .chatbot-demo__frame {
+      width: 100%;
+      height: 700px;
+      border: none;
+      background: white;
+      border-radius: 22px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* CTA Section */
+    .cta {
+      padding: var(--space-5xl) var(--space-xl);
+      text-align: center;
+    }
+    
+    .cta__container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: var(--space-3xl);
+      background: rgba(58, 134, 255, 0.05);
+      border: 2px solid rgba(58, 134, 255, 0.2);
+      border-radius: 32px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .cta__container::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle, var(--accent-500) 0%, transparent 70%);
+      opacity: 0.1;
+      animation: pulse-slow 4s ease-in-out infinite;
+    }
+    
+    @keyframes pulse-slow {
+      0%, 100% { transform: scale(1); opacity: 0.1; }
+      50% { transform: scale(1.2); opacity: 0.05; }
+    }
+    
+    .cta__badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+      border-radius: 50px;
+      font-size: var(--font-size-sm);
+      color: var(--error-500);
+      margin-bottom: var(--space-xl);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .cta__title {
+      font-size: var(--font-size-3xl);
+      margin-bottom: var(--space-lg);
+      position: relative;
+      z-index: 1;
+    }
+    
+    .cta__description {
+      font-size: var(--font-size-lg);
+      color: var(--neutral-300);
+      margin-bottom: var(--space-2xl);
+      position: relative;
+      z-index: 1;
+    }
+    
+    /* Footer */
+    .footer {
+      padding: var(--space-3xl) var(--space-xl) var(--space-2xl);
+      background: rgba(0, 0, 0, 0.5);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .footer__container {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: var(--space-3xl);
+    }
+    
+    .footer__brand {
+      padding-right: var(--space-2xl);
+    }
+    
+    .footer__logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--neutral-50);
+      margin-bottom: var(--space-lg);
+    }
+    
+    .footer__description {
+      color: var(--neutral-400);
+      line-height: 1.7;
+      margin-bottom: var(--space-xl);
+    }
+    
+    .footer__social {
+      display: flex;
+      gap: var(--space-md);
+    }
+    
+    .footer__social-link {
+      width: 40px;
+      height: 40px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--neutral-400);
+      transition: all 0.3s ease;
+    }
+    
+    .footer__social-link:hover {
+      background: var(--accent-500);
+      color: white;
+      transform: translateY(-2px);
+    }
+    
+    .footer__column {
+      padding: 0 var(--space-md);
+    }
+    
+    .footer__title {
+      font-size: var(--font-size-base);
+      font-weight: 600;
+      color: var(--neutral-50);
+      margin-bottom: var(--space-lg);
+    }
+    
+    .footer__links {
+      list-style: none;
+    }
+    
+    .footer__link {
+      color: var(--neutral-400);
+      display: block;
+      padding: var(--space-xs) 0;
+      transition: color 0.3s ease;
+    }
+    
+    .footer__link:hover {
+      color: var(--neutral-50);
+    }
+    
+    .footer__bottom {
+      margin-top: var(--space-3xl);
+      padding-top: var(--space-2xl);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--neutral-500);
+      font-size: var(--font-size-sm);
+    }
+    
+    /* Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    
+    /* Mobile Menu */
+    .mobile-menu-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+    
+    .mobile-menu-toggle span {
+      width: 24px;
+      height: 2px;
+      background: var(--neutral-50);
+      transition: all 0.3s ease;
+    }
+    
+    .mobile-menu {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--primary-900);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+    }
+    
+    .mobile-menu.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .mobile-menu__links {
+      list-style: none;
+      text-align: center;
+    }
+    
+    .mobile-menu__link {
+      display: block;
+      padding: var(--space-lg);
+      font-size: var(--font-size-xl);
+      color: var(--neutral-50);
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .nav__links {
+        display: none;
+      }
+      
+      .mobile-menu-toggle {
+        display: flex;
+      }
+      
+      .hero__title {
+        font-size: var(--font-size-4xl);
+      }
+      
+      .features__grid,
+      .testimonials__grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .chatbot-demo__container {
+        grid-template-columns: 1fr;
+      }
+      
+      .chatbot-demo__content {
+        padding-right: 0;
+        margin-bottom: var(--space-2xl);
+      }
+      
+      .footer__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+      
+      .footer__social {
+        justify-content: center;
+      }
+      
+      .footer__bottom {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+      }
+    }
+    
+    @media (max-width: 640px) {
+      .hero {
+        padding: var(--space-3xl) var(--space-lg);
+      }
+      
+      .hero__title {
+        font-size: var(--font-size-3xl);
+      }
+      
+      .hero__subtitle {
+        font-size: var(--font-size-base);
+      }
+      
+      .hero__cta {
+        flex-direction: column;
+        width: 100%;
+      }
+      
+      .btn {
+        width: 100%;
+      }
+      
+      .stats {
+        flex-direction: column;
+        gap: var(--space-xl);
+      }
+      
+      .features__grid,
+      .testimonials__grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+      }
+      
+      .feature-card {
+        padding: var(--space-xl);
+      }
+      
+      .process__step {
+        flex-direction: column !important;
+      }
+      
+      .process__timeline::before {
+        display: none;
+      }
+      
+      .process__step-number {
+        position: relative;
+        left: auto;
+        transform: none;
+        margin-bottom: var(--space-lg);
+      }
+      
+      .chatbot-demo__frame {
+        height: 500px;
+      }
+    }
+    
+    /* Utility Classes */
+    .text-gradient {
+      background: var(--gradient-accent);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    .shadow-glow {
+      box-shadow: var(--shadow-glow);
+    }
+    
+    /* Loading Animation */
+    .loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: var(--primary-950);
+      z-index: 9999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.5s ease;
+    }
+    
+    .loader.loaded {
+      opacity: 0;
+      pointer-events: none;
+    }
+    
+    .loader__spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top-color: var(--accent-500);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    
+    /* Accessibility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border-width: 0;
+    }
+    
+    /* Focus Styles */
+    *:focus {
+      outline: 2px solid var(--accent-500);
+      outline-offset: 2px;
+    }
+    
+    *:focus:not(:focus-visible) {
+      outline: none;
+    }
+    
+    /* Print Styles */
+    @media print {
+      body {
+        background: white;
+        color: black;
+      }
+      
+      .nav, .orb, .loader, .mobile-menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader__spinner"></div>
+  </div>
+  
+  <!-- Animated Background Orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  
+  <!-- Navigation -->
+  <nav class="nav" id="navbar">
+    <div class="nav__container">
+      <a href="#" class="nav__logo">
+        <div class="nav__logo-icon">FD</div>
+        <span>FrontendDialed</span>
+      </a>
+      
+      <ul class="nav__links">
+        <li><a href="#features" class="nav__link">Features</a></li>
+        <li><a href="#process" class="nav__link">Process</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+        <li><a href="#demo" class="nav__link">Demo</a></li>
+      </ul>
+      
+      <a href="https://calendly.com/seanmnr20/30min" class="btn btn--primary" target="_blank" rel="noopener">
+        Book Strategy Call
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        </svg>
+      </a>
+      
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul class="mobile-menu__links">
+      <li><a href="#features" class="mobile-menu__link">Features</a></li>
+      <li><a href="#process" class="mobile-menu__link">Process</a></li>
+      <li><a href="#pricing" class="mobile-menu__link">Pricing</a></li>
+      <li><a href="#testimonials" class="mobile-menu__link">Testimonials</a></li>
+      <li><a href="#demo" class="mobile-menu__link">Demo</a></li>
+      <li><a href="https://calendly.com/seanmnr20/30min" class="mobile-menu__link" target="_blank">Book Call</a></li>
+    </ul>
+  </div>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero__content">
+      <div class="hero__badge">
+        <div class="hero__badge-icon"></div>
+        <span>AI-Powered Client Acquisition</span>
+      </div>
+      
+      <h1 class="hero__title">
+        Transform Visitors Into Clients<br/>
+        <span class="text-gradient">While You Sleep</span>
+      </h1>
+      
+      <p class="hero__subtitle">
+        Deploy enterprise-grade AI funnels that qualify, nurture, and convert leads 24/7.
+        Complete client acquisition systems delivered in 7 days or less.
+      </p>
+      
+      <div class="hero__cta">
+        <a href="https://calendly.com/seanmnr20/30min" class="btn btn--primary btn--large" target="_blank" rel="noopener">
+          Start Building Your Funnel
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </a>
+        <a href="#demo" class="btn btn--secondary btn--large">
+          See Live Demo
+        </a>
+      </div>
+      
+      <div class="stats">
+        <div class="stat">
+          <div class="stat__number" data-target="87">87%</div>
+          <div class="stat__label">Conversion Rate</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">24/7</div>
+          <div class="stat__label">Always Active</div>
+        </div>
+        <div class="stat">
+          <div class="stat__number">7 Days</div>
+          <div class="stat__label">Time to Launch</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="features__header">
+      <h2 class="section__title">Everything You Need to<br/><span class="text-gradient">Automate Growth</span></h2>
+      <p class="section__subtitle">
+        Our comprehensive solution handles every aspect of your client acquisition process
+      </p>
+    </div>
+    
+    <div class="features__grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">🎨</div>
+        <h3 class="feature-card__title">Custom Landing Pages</h3>
+        <p class="feature-card__description">
+          Conversion-optimized pages designed specifically for your market. Clean layouts, 
+          persuasive copy, and psychological triggers that drive action.
+        </p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-card__icon">🤖</div>
+        <h3 class="feature-card__title">AI Sales Assistant</h3>
+        <p class="feature-card__description">
+          Intelligent chatbot that qualifies leads, handles objections, and guides prospects 
+          through your sales process 24/7 with human-like conversations.
+        </p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-card__icon">📅</div>
+        <h3 class="feature-card__title">Seamless Integration</h3>
+        <p class="feature-card__description">
+          Direct integration with Calendly for scheduling and Stripe for payments. 
+          Qualified leads flow directly into your existing workflow.
+        </p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-card__icon">📊</div>
+        <h3 class="feature-card__title">Analytics Dashboard</h3>
+        <p class="feature-card__description">
+          Real-time insights into visitor behavior, conversion rates, and AI performance. 
+          Make data-driven decisions to optimize your funnel.
+        </p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-card__icon">⚡</div>
+        <h3 class="feature-card__title">Lightning Fast</h3>
+        <p class="feature-card__description">
+          Built on cutting-edge infrastructure for instant load times and seamless 
+          interactions. Your funnel performs flawlessly at any scale.
+        </p>
+      </div>
+      
+      <div class="feature-card">
+        <div class="feature-card__icon">🔒</div>
+        <h3 class="feature-card__title">Enterprise Security</h3>
+        <p class="feature-card__description">
+          Bank-level encryption and compliance with data protection regulations. 
+          Your leads and customer data are always secure.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Process Section -->
+  <section id="process" class="process">
+    <div class="features__header">
+      <h2 class="section__title">From Concept to Conversion<br/><span class="text-gradient">In 7 Days</span></h2>
+      <p class="section__subtitle">
+        Our streamlined process ensures rapid deployment without compromising quality
+      </p>
+    </div>
+    
+    <div class="process__timeline">
+      <div class="process__step">
+        <div class="process__step-content">
+          <h3>Discovery & Strategy</h3>
+          <p>We analyze your market, understand your ideal client, and craft a conversion strategy tailored to your business.</p>
+        </div>
+        <div class="process__step-number">1</div>
+      </div>
+      
+      <div class="process__step">
+        <div class="process__step-content">
+          <h3>Design & Development</h3>
+          <p>Our team creates your custom landing page and configures your AI assistant with your specific sales process.</p>
+        </div>
+        <div class="process__step-number">2</div>
+      </div>
+      
+      <div class="process__step">
+        <div class="process__step-content">
+          <h3>Integration & Testing</h3>
+          <p>We connect your calendar, payment systems, and ensure everything works flawlessly before launch.</p>
+        </div>
+        <div class="process__step-number">3</div>
+      </div>
+      
+      <div class="process__step">
+        <div class="process__step-content">
+          <h3>Launch & Optimize</h3>
+          <p>Your funnel goes live and starts converting visitors into clients while we monitor and optimize performance.</p>
+        </div>
+        <div class="process__step-number">4</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Pricing Section -->
+  <section id="pricing" class="pricing">
+    <div class="features__header">
+      <h2 class="section__title">Simple, Transparent<br/><span class="text-gradient">Investment</span></h2>
+      <p class="section__subtitle">
+        No hidden fees, no monthly retainers. Just one investment in your growth.
+      </p>
+    </div>
+    
+    <div class="pricing__card">
+      <div class="hero__badge">
+        <span>Most Popular</span>
+      </div>
+      <h3>Complete AI Funnel System</h3>
+      <div class="pricing__price">$2,500</div>
+      <p style="color: var(--neutral-400); margin-bottom: var(--space-2xl);">One-time investment</p>
+      
+      <ul class="pricing__features">
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Custom AI-powered sales funnel
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Professional landing page design
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Intelligent chatbot configuration
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Calendly & Stripe integration
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Conversion-focused copywriting
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          7-day delivery guarantee
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          30-day performance optimization
+        </li>
+        <li class="pricing__feature">
+          <span class="pricing__feature-icon">✓</span>
+          Analytics dashboard access
+        </li>
+      </ul>
+      
+      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn--primary btn--large" style="width: 100%; margin-top: var(--space-2xl);" target="_blank" rel="noopener">
+        Get Started Today
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="features__header">
+      <h2 class="section__title">Success Stories From<br/><span class="text-gradient">Real Clients</span></h2>
+      <p class="section__subtitle">
+        See how businesses like yours are transforming their client acquisition
+      </p>
+    </div>
+    
+    <div class="testimonials__grid">
+      <div class="testimonial">
+        <div class="testimonial__rating">
+          ★★★★★
+        </div>
+        <p class="testimonial__quote">
+          "I closed 3 new clients in the first week. The AI handles objections better than most salespeople I've worked with. This system is a game-changer for my agency."
+        </p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">MJ</div>
+          <div class="testimonial__info">
+            <div class="testimonial__name">Marcus Johnson</div>
+            <div class="testimonial__role">Agency Owner</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial">
+        <div class="testimonial__rating">
+          ★★★★★
+        </div>
+        <p class="testimonial__quote">
+          "A complete, professional funnel live in just 5 days. Zero tech headaches, just pure results. My calendar is now booked solid with qualified leads."
+        </p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">AT</div>
+          <div class="testimonial__info">
+            <div class="testimonial__name">Alicia Thompson</div>
+            <div class="testimonial__role">Business Consultant</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="testimonial">
+        <div class="testimonial__rating">
+          ★★★★★
+        </div>
+        <p class="testimonial__quote">
+          "FrontendDialed did everything for me — I just had to show up to the calls. The ROI was immediate. Best investment I've made in my coaching business."
+        </p>
+        <div class="testimonial__author">
+          <div class="testimonial__avatar">DM</div>
+          <div class="testimonial__info">
+            <div class="testimonial__name">Darnell Mitchell</div>
+            <div class="testimonial__role">Executive Coach</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Chatbot Demo Section -->
+  <section id="demo" class="chatbot-demo">
+    <div class="chatbot-demo__container">
+      <div class="chatbot-demo__content">
+        <h2 class="chatbot-demo__title">Experience Your Future<br/><span class="text-gradient">AI Sales Assistant</span></h2>
+        <p class="chatbot-demo__description">
+          This is the exact AI system that will be embedded on your landing page — trained specifically 
+          for your business, qualifying leads and booking calls 24/7.
+        </p>
+        
+        <ul class="chatbot-demo__features">
+          <li class="chatbot-demo__feature">
+            <span class="pricing__feature-icon">✓</span>
+            Handles complex objections intelligently
+          </li>
+          <li class="chatbot-demo__feature">
+            <span class="pricing__feature-icon">✓</span>
+            Qualifies leads based on your criteria
+          </li>
+          <li class="chatbot-demo__feature">
+            <span class="pricing__feature-icon">✓</span>
+            Books calls directly to your calendar
+          </li>
+          <li class="chatbot-demo__feature">
+            <span class="pricing__feature-icon">✓</span>
+            Processes payments automatically
+          </li>
+        </ul>
+        
+        <a href="#cta" class="btn btn--primary btn--large">
+          Deploy Your AI Assistant
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 17L17 7M17 7H7M17 7V17"/>
+          </svg>
+        </a>
+      </div>
+      
+      <div class="chatbot-demo__frame-wrapper">
+        <iframe
+          class="chatbot-demo__frame"
+          src="https://www.chatbase.co/chatbot-iframe/7F__-FE_5uXmAEJgL82dN"
+          title="AI Sales Assistant Demo"
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section id="cta" class="cta">
+    <div class="cta__container">
+      <div class="cta__badge">
+        <div class="hero__badge-icon" style="background: var(--error-500);"></div>
+        <span>Limited Availability</span>
+      </div>
+      
+      <h2 class="cta__title">Only 5 Funnel Slots<br/>Remaining This Month</h2>
+      <p class="cta__description">
+        Due to our commitment to quality and personalized service, we only accept a limited number 
+        of projects each month. Secure your spot before they're gone.
+      </p>
+      
+      <a href="https://buy.stripe.com/6oUcN6bKG0THfHhdyUcZa00" class="btn btn--primary btn--large shadow-glow" target="_blank" rel="noopener">
+        Claim Your Slot Now
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <div class="nav__logo-icon">FD</div>
+          <span>FrontendDialed</span>
+        </div>
+        <p class="footer__description">
+          Enterprise-grade AI funnels that transform your business. 
+          We handle the technology, you handle the growth.
+        </p>
+        <div class="footer__social">
+          <a href="#" class="footer__social-link" aria-label="Twitter">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+            </svg>
+          </a>
+          <a href="#" class="footer__social-link" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="mailto:seanmnr20@gmail.com" class="footer__social-link" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <div class="footer__column">
+        <h4 class="footer__title">Product</h4>
+        <ul class="footer__links">
+          <li><a href="#features" class="footer__link">Features</a></li>
+          <li><a href="#pricing" class="footer__link">Pricing</a></li>
+          <li><a href="#demo" class="footer__link">Live Demo</a></li>
+          <li><a href="#" class="footer__link">API Access</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer__column">
+        <h4 class="footer__title">Company</h4>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">About Us</a></li>
+          <li><a href="#" class="footer__link">Case Studies</a></li>
+          <li><a href="#" class="footer__link">Careers</a></li>
+          <li><a href="#" class="footer__link">Contact</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer__column">
+        <h4 class="footer__title">Resources</h4>
+        <ul class="footer__links">
+          <li><a href="#" class="footer__link">Documentation</a></li>
+          <li><a href="#" class="footer__link">Blog</a></li>
+          <li><a href="#" class="footer__link">Support</a></li>
+          <li><a href="#" class="footer__link">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer__bottom">
+      <p>&copy; 2025 FrontendDialed. All rights reserved.</p>
+      <div>
+        <a href="#" class="footer__link">Privacy Policy</a> • 
+        <a href="#" class="footer__link">Terms of Service</a> • 
+        <a href="#" class="footer__link">Cookie Policy</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Premium JavaScript Implementation
+    
+    // Loading Screen
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loader').classList.add('loaded');
+      }, 500);
+    });
+    
+    // Navbar Scroll Effect
+    const navbar = document.getElementById('navbar');
+    let lastScroll = 0;
+    
+    window.addEventListener('scroll', () => {
+      const currentScroll = window.pageYOffset;
+      
+      if (currentScroll > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+      
+      lastScroll = currentScroll;
+    });
+    
+    // Mobile Menu
+    const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    let menuOpen = false;
+    
+    mobileMenuToggle.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('active');
+      document.body.style.overflow = menuOpen ? 'hidden' : '';
+      
+      // Animate hamburger
+      const spans = mobileMenuToggle.querySelectorAll('span');
+      if (menuOpen) {
+        spans[0].style.transform = 'rotate(45deg) translateY(8px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translateY(-8px)';
+      } else {
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+      }
+    });
+    
+    // Close mobile menu on link click
+    document.querySelectorAll('.mobile-menu__link').forEach(link => {
+      link.addEventListener('click', () => {
+        menuOpen = false;
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+        
+        const spans = mobileMenuToggle.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+      });
+    });
+    
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const href = this.getAttribute('href');
+        if (href === '#') return;
+        
+        const target = document.querySelector(href);
+        if (target) {
+          e.preventDefault();
+          const offset = 80;
+          const targetPosition = target.offsetTop - offset;
+          
+          window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Intersection Observer for Animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    // Observe all animated elements
+    const animatedElements = document.querySelectorAll('.feature-card, .testimonial, .process__step, .pricing__card');
+    animatedElements.forEach(el => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(30px)';
+      el.style.transition = 'all 0.8s cubic-bezier(0.19, 1, 0.22, 1)';
+      observer.observe(el);
+    });
+    
+    // Parallax Effect for Orbs
+    let ticking = false;
+    function updateParallax() {
+      const scrolled = window.pageYOffset;
+      const orbs = document.querySelectorAll('.orb');
+      
+      orbs.forEach((orb, index) => {
+        const speed = 0.5 + (index * 0.2);
+        const yPos = -(scrolled * speed);
+        orb.style.transform = `translateY(${yPos}px)`;
+      });
+      
+      ticking = false;
+    }
+    
+    function requestTick() {
+      if (!ticking) {
+        window.requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    }
+    
+    window.addEventListener('scroll', requestTick);
+    
+    // Dynamic Counter Animation
+    function animateValue(element, start, end, duration) {
+      let startTimestamp = null;
+      const step = (timestamp) => {
+        if (!startTimestamp) startTimestamp = timestamp;
+        const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+        const value = Math.floor(progress * (end - start) + start);
+        element.textContent = value + (element.dataset.suffix || '');
+        if (progress < 1) {
+          window.requestAnimationFrame(step);
+        }
+      };
+      window.requestAnimationFrame(step);
+    }
+    
+    // Animate stats when they come into view
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const statNumbers = entry.target.querySelectorAll('.stat__number[data-target]');
+          statNumbers.forEach(stat => {
+            const target = parseInt(stat.dataset.target);
+            stat.dataset.suffix = '%';
+            animateValue(stat, 0, target, 2000);
+          });
+          statsObserver.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    
+    const statsSection = document.querySelector('.stats');
+    if (statsSection) {
+      statsObserver.observe(statsSection);
+    }
+    
+    // Add active nav link based on scroll position
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav__link');
+    
+    window.addEventListener('scroll', () => {
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= sectionTop - 100) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').slice(1) === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+    
+    // Performance Monitoring
+    if ('PerformanceObserver' in window) {
+      try {
+        const perfObserver = new PerformanceObserver((list) => {
+          for (const entry of list.getEntries()) {
+            // Log performance metrics
+            console.log(`Performance: ${entry.name} - ${entry.duration}ms`);
+          }
+        });
+        perfObserver.observe({ entryTypes: ['measure', 'navigation'] });
+      } catch (e) {
+        // PerformanceObserver not fully supported
+      }
+    }
+    
+    // Lazy Loading for Iframe
+    const chatbotFrame = document.querySelector('.chatbot-demo__frame');
+    const frameObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Frame is already loaded via HTML
+          frameObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    
+    if (chatbotFrame) {
+      frameObserver.observe(chatbotFrame);
+    }
+    
+    // Analytics Event Tracking
+    function trackEvent(category, action, label) {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', action, {
+          'event_category': category,
+          'event_label': label
+        });
+      }
+    }
+    
+    // Track CTA clicks
+    document.querySelectorAll('.btn--primary').forEach(button => {
+      button.addEventListener('click', () => {
+        trackEvent('CTA', 'click', button.textContent.trim());
+      });
+    });
+    
+    // Keyboard Navigation Support
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menuOpen) {
+        menuOpen = false;
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = '';
+        
+        const spans = mobileMenuToggle.querySelectorAll('span');
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+      }
+    });
+    
+    // Enhance focus visibility for accessibility
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Tab') {
+        document.body.classList.add('keyboard-nav');
+      }
+    });
+    
+    document.addEventListener('mousedown', () => {
+      document.body.classList.remove('keyboard-nav');
+    });
+    
+    // Service Worker Registration for PWA capabilities
+    if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js').catch(() => {
+          // Service worker registration failed
+        });
+      });
+    }
+    
+    // Console Easter Egg
+    console.log('%c🚀 FrontendDialed - Enterprise AI Funnels', 
+      'font-size: 20px; font-weight: bold; color: #3A86FF; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);');
+    console.log('%cBuilt with precision by the #1 Tech Firm in America', 
+      'font-size: 14px; color: #999; font-style: italic;');
+    console.log('%cInterested in joining our team? Email careers@frontenddialed.com', 
+      'font-size: 12px; color: #666;');
+  </script>
+</body>
+</html>
