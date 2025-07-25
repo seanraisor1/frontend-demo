@@ -1,4 +1,4 @@
-<script>
+
     // Premium JavaScript Implementation
     
     // Loading Screen
@@ -276,4 +276,4 @@
       'font-size: 14px; color: #999; font-style: italic;');
     console.log('%cInterested in joining our team? Email careers@frontenddialed.com', 
       'font-size: 12px; color: #666;');
-  </script>
+  
