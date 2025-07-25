@@ -260,13 +260,8 @@
       document.body.classList.remove('keyboard-nav');
     });
     
-    // Service Worker Registration for PWA capabilities
-    if ('serviceWorker' in navigator && window.location.protocol === 'https:') {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').catch(() => {
-          // Service worker registration failed
-        });
-      });
+   
+    
     }
     
     // Console Easter Egg
